@@ -340,7 +340,7 @@ START:
 ```jsx
 ./HelloWorldService &
 ```
-<img src="https://user-images.githubusercontent.com/81483791/194726855-c372c73c-57b0-44b2-a260-761464a0a925.png"  width="500" height="70"/> 
+<img src="https://user-images.githubusercontent.com/81483791/194726855-c372c73c-57b0-44b2-a260-761464a0a925.png"  width="500" height="71"/> 
 
 ```jsx
 ./HelloWorldClient
