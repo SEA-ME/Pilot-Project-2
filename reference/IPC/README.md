@@ -333,14 +333,14 @@ make
 
 START:
 
-<img src="https://user-images.githubusercontent.com/81483791/194726827-8a0aff2a-a9c4-4b83-a8cb-aedb81815489.png"  width="400" height="80"/> 
+<img src="https://user-images.githubusercontent.com/81483791/194726827-8a0aff2a-a9c4-4b83-a8cb-aedb81815489.png"  width="500" height="100"/> 
 
 
 
 ```jsx
 ./HelloWorldService &
 ```
-<img src="https://user-images.githubusercontent.com/81483791/194726855-c372c73c-57b0-44b2-a260-761464a0a925.png"  width="400" height="80"/> 
+<img src="https://user-images.githubusercontent.com/81483791/194726855-c372c73c-57b0-44b2-a260-761464a0a925.png"  width="500" height="70"/> 
 
 ```jsx
 ./HelloWorldClient
