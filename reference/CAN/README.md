@@ -23,7 +23,7 @@
 
 
 <img src="https://user-images.githubusercontent.com/81483791/194758846-54a21d89-ba25-4418-a5e9-72ba8367a4e9.png"  width="400" height="200"/> 
-<img src="https://user-images.githubusercontent.com/81483791/194758934-9ae47d63-3b6b-400a-b386-a03ad247c90b.png"  width="200" height="300"/> 
+<img src="https://user-images.githubusercontent.com/81483791/194758934-9ae47d63-3b6b-400a-b386-a03ad247c90b.png"  width="300" height="400"/> 
 
 ### 1. Update & Upgrade
 
@@ -84,7 +84,7 @@ OUTPUT :
 
 unsigned char stmp[8] = {1, 2, 3, 4, 5, 6, 7, 8};
 
-<img src="https://user-images.githubusercontent.com/81483791/194759509-c6dc54e7-e18c-44bf-8d03-ddc5955191cf.png"  width="800" height="170"/> 
+<img src="https://user-images.githubusercontent.com/81483791/194759509-c6dc54e7-e18c-44bf-8d03-ddc5955191cf.png"  width="800" height="210"/> 
 
 I can receive but it is wrong data so I tried to use CAN bus hat
 
@@ -126,7 +126,7 @@ ifconfig -a
 
 OUTPUT:
 
-<img src="https://user-images.githubusercontent.com/81483791/194759745-bf0ca7c9-9d24-4511-8da6-451ba709fe5a.png"  width="800" height="170"/> 
+<img src="https://user-images.githubusercontent.com/81483791/194759745-bf0ca7c9-9d24-4511-8da6-451ba709fe5a.png"  width="800" height="200"/> 
 
 ### 6. Install CAN tools
 
@@ -167,9 +167,10 @@ cangen can0 -mv
 candump can1
 ```
 
-OUTPUT : 
-<img src="https://user-images.githubusercontent.com/81483791/194759914-d895bb27-c0ae-4d30-a76a-3fab5080f9e7.png"  width="800" height="200"/> 
-<img src="https://user-images.githubusercontent.com/81483791/194759918-3a2c27f1-2d26-4191-8dcb-6948b2f82208.png"  width="800" height="200"/> 
+OUTPUT :     
+
+<img src="https://user-images.githubusercontent.com/81483791/194759914-d895bb27-c0ae-4d30-a76a-3fab5080f9e7.png"  width="800" height="210"/> 
+<img src="https://user-images.githubusercontent.com/81483791/194759918-3a2c27f1-2d26-4191-8dcb-6948b2f82208.png"  width="800" height="210"/> 
 
 ### 8. Raspberry pi to Arduino CAN - CAN communication
 
@@ -215,4 +216,4 @@ OUTPUT:
 
 unsigned char stmp[8] = {1, 2, 3, 4, 5, 6, 7, 8};
 
-<img src="https://user-images.githubusercontent.com/81483791/194760379-161afcd7-03d7-413a-b53c-8eae269a6b6b.png"  width="800" height="210"/> 
+<img src="https://user-images.githubusercontent.com/81483791/194760379-161afcd7-03d7-413a-b53c-8eae269a6b6b.png"  width="800" height="220"/> 

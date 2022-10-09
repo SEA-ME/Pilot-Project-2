@@ -143,7 +143,7 @@ sudo -S systemctl status picard_display
 ```jsx
 python display_server.py
 ```
-display_server.py 
+[display_server.py](https://github.com/jacey-h/Pilot-Project-2/blob/main/reference/OLED/example/display_server.py)
 
 <img src="https://user-images.githubusercontent.com/81483791/194761110-5c7eef2f-9614-453d-bc89-6c313ffef107.png"  width="300" height="200"/>   
 
