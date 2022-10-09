@@ -18,8 +18,9 @@
 - ## Contents
 
 [Solution 1. OLED display with donkeycar](#solution-1-oled-display-with-donkeycar)  
-[Solution 2. OLED display with pi-display](#solution-2-oled-display-with-pi-display)
-[How to change display_server.py file](#how-to-change-display_serverpy-file) 
+[Solution 2. OLED display with pi-display](#solution-2-oled-display-with-pi-display)   
+[How to change display_server.py file](#how-to-change-display_serverpy-file)    
+[How to Calculate battery level](#how-to-calculate-battery-level)
 - - -
 
 
@@ -147,3 +148,29 @@ python display_server.py
 
 <img src="https://user-images.githubusercontent.com/81483791/194761110-5c7eef2f-9614-453d-bc89-6c313ffef107.png"  width="300" height="200"/>   
 
+- - - 
+
+## How to Calculate battery level
+
+<img src="https://user-images.githubusercontent.com/81483791/194762686-8d460809-6a58-4587-b921-dea96e5f7d65.png"  width="400" height="300"/>  
+
+8.4V, 18650 battery × 4
+
+(two in parallel, two in series)
+
+- series → **Voltage rise**
+- parallel →**Ampere rise**
+
+One battery has 4.2V | two in series -> total = 8.4V
+
+4.2V = full charge
+
+3V = discharge
+
+nominal voltage 3.6~3.7V
+
+### `battery level = ( voltage - 6 ) /2.4 *100`
+
+If voltage is 8.4V, battery level is 100% 
+
+If voltage is 6V, battery level is 0%
