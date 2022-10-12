@@ -595,3 +595,24 @@ int main() {
   return std::atomic_is_lock_free(&x);
 }
 
+Performing C++ SOURCE FILE Test HAVE_CXX_ATOMICS_WITHOUT_LIB succeeded with the following output:
+Change Dir: /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_84e7a/fast && /usr/bin/make -f CMakeFiles/cmTC_84e7a.dir/build.make CMakeFiles/cmTC_84e7a.dir/build
+make[1]: Entering directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_84e7a.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_CXX_ATOMICS_WITHOUT_LIB  -std=c++11   -o CMakeFiles/cmTC_84e7a.dir/src.cxx.o -c /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_84e7a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84e7a.dir/link.txt --verbose=1
+/usr/bin/c++   -DHAVE_CXX_ATOMICS_WITHOUT_LIB  -std=c++11    -rdynamic CMakeFiles/cmTC_84e7a.dir/src.cxx.o  -o cmTC_84e7a 
+make[1]: Leaving directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <atomic>
+std::atomic<long long> x;
+int main() {
+  return std::atomic_is_lock_free(&x);
+}
+
