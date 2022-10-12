@@ -477,3 +477,121 @@ make[1]: Leaving directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeF
 
 
 
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c595d/fast && /usr/bin/make -f CMakeFiles/cmTC_c595d.dir/build.make CMakeFiles/cmTC_c595d.dir/build
+make[1]: Entering directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c595d.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c595d.dir/CheckIncludeFile.c.o   -c /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c595d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c595d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c595d.dir/CheckIncludeFile.c.o  -o cmTC_c595d 
+make[1]: Leaving directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bcd55/fast && /usr/bin/make -f CMakeFiles/cmTC_bcd55.dir/build.make CMakeFiles/cmTC_bcd55.dir/build
+make[1]: Entering directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bcd55.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bcd55.dir/CheckIncludeFile.c.o   -c /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_bcd55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcd55.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bcd55.dir/CheckIncludeFile.c.o  -o cmTC_bcd55 
+make[1]: Leaving directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b7c1f/fast && /usr/bin/make -f CMakeFiles/cmTC_b7c1f.dir/build.make CMakeFiles/cmTC_b7c1f.dir/build
+make[1]: Entering directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7c1f.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b7c1f.dir/CheckIncludeFile.c.o   -c /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b7c1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7c1f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b7c1f.dir/CheckIncludeFile.c.o  -o cmTC_b7c1f 
+make[1]: Leaving directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c47d4/fast && /usr/bin/make -f CMakeFiles/cmTC_c47d4.dir/build.make CMakeFiles/cmTC_c47d4.dir/build
+make[1]: Entering directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c47d4.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c47d4.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_c47d4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c47d4.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c47d4.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTC_c47d4 
+make[1]: Leaving directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a906b/fast && /usr/bin/make -f CMakeFiles/cmTC_a906b.dir/build.make CMakeFiles/cmTC_a906b.dir/build
+make[1]: Entering directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a906b.dir/TestEndianess.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a906b.dir/TestEndianess.c.o   -c /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_a906b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a906b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a906b.dir/TestEndianess.c.o  -o cmTC_a906b 
+make[1]: Leaving directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing C++ SOURCE FILE Test HAVE_CXX_ATOMICS64_WITHOUT_LIB succeeded with the following output:
+Change Dir: /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e7651/fast && /usr/bin/make -f CMakeFiles/cmTC_e7651.dir/build.make CMakeFiles/cmTC_e7651.dir/build
+make[1]: Entering directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e7651.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_CXX_ATOMICS64_WITHOUT_LIB -std=c++11   -o CMakeFiles/cmTC_e7651.dir/src.cxx.o -c /home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e7651
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7651.dir/link.txt --verbose=1
+/usr/bin/c++   -DHAVE_CXX_ATOMICS64_WITHOUT_LIB -std=c++11    -rdynamic CMakeFiles/cmTC_e7651.dir/src.cxx.o  -o cmTC_e7651 
+make[1]: Leaving directory '/home/pi/commonapi/capicxx-dbus-runtime/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <atomic>
+#include <cstdint>
+std::atomic<uint64_t> x (0);
+int main() {
+  uint64_t i = x.load(std::memory_order_relaxed);
+  return std::atomic_is_lock_free(&x);
+}
+
