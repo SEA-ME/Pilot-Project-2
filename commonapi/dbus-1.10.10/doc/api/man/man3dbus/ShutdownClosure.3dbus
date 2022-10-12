@@ -1,0 +1,34 @@
+.TH "ShutdownClosure" 3dbus "Thu Oct 6 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ShutdownClosure \- This struct represents a function to be called on shutdown\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBShutdownClosure\fP * \fBnext\fP"
+.br
+.RI "Next \fBShutdownClosure\fP\&. "
+.ti -1c
+.RI "DBusShutdownFunction \fBfunc\fP"
+.br
+.RI "Function to call\&. "
+.ti -1c
+.RI "void * \fBdata\fP"
+.br
+.RI "Data for function\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This struct represents a function to be called on shutdown\&. 
+.PP
+Definition at line 791 of file dbus\-memory\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

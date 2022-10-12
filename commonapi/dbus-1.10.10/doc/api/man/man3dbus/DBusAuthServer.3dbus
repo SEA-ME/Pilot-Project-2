@@ -1,0 +1,38 @@
+.TH "DBusAuthServer" 3dbus "Thu Oct 6 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusAuthServer \- 'Subclass' of \fBDBusAuth\fP for server side\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBDBusAuth\fP \fBbase\fP"
+.br
+.RI "Parent class\&. "
+.ti -1c
+.RI "int \fBfailures\fP"
+.br
+.RI "Number of times client has been rejected\&. "
+.ti -1c
+.RI "int \fBmax_failures\fP"
+.br
+.RI "Number of times we reject before disconnect\&. "
+.ti -1c
+.RI "\fBDBusString\fP \fBguid\fP"
+.br
+.RI "Our globally unique ID in hex encoding\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+'Subclass' of \fBDBusAuth\fP for server side\&. 
+.PP
+Definition at line 212 of file dbus\-auth\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

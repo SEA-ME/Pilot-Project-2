@@ -1,0 +1,64 @@
+.TH "DBusObjectSubtree" 3dbus "Thu Oct 6 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusObjectSubtree \- Struct representing a single registered subtree handler, or node that's a parent of a registered subtree handler\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBDBusAtomic\fP \fBrefcount\fP"
+.br
+.RI "Reference count\&. "
+.ti -1c
+.RI "\fBDBusObjectSubtree\fP * \fBparent\fP"
+.br
+.RI "Parent node\&. "
+.ti -1c
+.RI "\fBDBusObjectPathUnregisterFunction\fP \fBunregister_function\fP"
+.br
+.RI "Function to call on unregister\&. "
+.ti -1c
+.RI "\fBDBusObjectPathMessageFunction\fP \fBmessage_function\fP"
+.br
+.RI "Function to handle messages\&. "
+.ti -1c
+.RI "void * \fBuser_data\fP"
+.br
+.RI "Data for functions\&. "
+.ti -1c
+.RI "\fBDBusObjectSubtree\fP ** \fBsubtrees\fP"
+.br
+.RI "Child nodes\&. "
+.ti -1c
+.RI "int \fBn_subtrees\fP"
+.br
+.RI "Number of child nodes\&. "
+.ti -1c
+.RI "int \fBmax_subtrees\fP"
+.br
+.RI "Number of allocated entries in subtrees\&. "
+.ti -1c
+.RI "unsigned int \fBinvoke_as_fallback\fP: 1"
+.br
+.RI "Whether to invoke message_function when child nodes don't handle the message\&. "
+.ti -1c
+.RI "char \fBname\fP [1]"
+.br
+.RI "Allocated as large as necessary\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Struct representing a single registered subtree handler, or node that's a parent of a registered subtree handler\&. 
+
+If message_function != NULL there's actually a handler at this node\&. 
+.PP
+Definition at line 70 of file dbus\-object\-tree\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

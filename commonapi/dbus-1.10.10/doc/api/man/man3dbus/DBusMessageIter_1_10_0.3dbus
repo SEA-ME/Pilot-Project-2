@@ -1,0 +1,66 @@
+.TH "DBusMessageIter_1_10_0" 3dbus "Thu Oct 6 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusMessageIter_1_10_0 \- Layout of a \fBDBusMessageIter\fP on the stack in dbus 1\&.10\&.0\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "void * \fBdummy1\fP"
+.br
+.ti -1c
+.RI "void * \fBdummy2\fP"
+.br
+.ti -1c
+.RI "\fBdbus_uint32_t\fP \fBdummy3\fP"
+.br
+.ti -1c
+.RI "int \fBdummy4\fP"
+.br
+.ti -1c
+.RI "int \fBdummy5\fP"
+.br
+.ti -1c
+.RI "int \fBdummy6\fP"
+.br
+.ti -1c
+.RI "int \fBdummy7\fP"
+.br
+.ti -1c
+.RI "int \fBdummy8\fP"
+.br
+.ti -1c
+.RI "int \fBdummy9\fP"
+.br
+.ti -1c
+.RI "int \fBdummy10\fP"
+.br
+.ti -1c
+.RI "int \fBdummy11\fP"
+.br
+.ti -1c
+.RI "int \fBpad1\fP"
+.br
+.ti -1c
+.RI "int \fBpad2\fP"
+.br
+.ti -1c
+.RI "void * \fBpad3\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Layout of a \fBDBusMessageIter\fP on the stack in dbus 1\&.10\&.0\&. 
+
+This is no longer used, but for ABI compatibility we need to assert that the new layout is the same size\&. 
+.PP
+Definition at line 144 of file dbus\-message\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

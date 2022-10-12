@@ -1,0 +1,267 @@
+.TH "DBusServerInternals" 3dbus "Thu Oct 6 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusServerInternals \- Implementation details of \fBDBusServer\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBDBusServer\fP"
+.br
+.RI "Internals of \fBDBusServer\fP object\&. "
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBdbus_bool_t\fP(* \fBDBusWatchAddFunction\fP) (\fBDBusWatchList\fP *list, \fBDBusWatch\fP *watch)"
+.br
+.RI "Function to be called in protected_change_watch() with refcount held\&. "
+.ti -1c
+.RI "typedef void(* \fBDBusWatchRemoveFunction\fP) (\fBDBusWatchList\fP *list, \fBDBusWatch\fP *watch)"
+.br
+.RI "Function to be called in protected_change_watch() with refcount held\&. "
+.ti -1c
+.RI "typedef void(* \fBDBusWatchToggleFunction\fP) (\fBDBusWatchList\fP *list, \fBDBusWatch\fP *watch, \fBdbus_bool_t\fP enabled)"
+.br
+.RI "Function to be called in protected_change_watch() with refcount held\&. "
+.ti -1c
+.RI "typedef \fBdbus_bool_t\fP(* \fBDBusTimeoutAddFunction\fP) (\fBDBusTimeoutList\fP *list, \fBDBusTimeout\fP *timeout)"
+.br
+.RI "Function to be called in protected_change_timeout() with refcount held\&. "
+.ti -1c
+.RI "typedef void(* \fBDBusTimeoutRemoveFunction\fP) (\fBDBusTimeoutList\fP *list, \fBDBusTimeout\fP *timeout)"
+.br
+.RI "Function to be called in protected_change_timeout() with refcount held\&. "
+.ti -1c
+.RI "typedef void(* \fBDBusTimeoutToggleFunction\fP) (\fBDBusTimeoutList\fP *list, \fBDBusTimeout\fP *timeout, \fBdbus_bool_t\fP enabled)"
+.br
+.RI "Function to be called in protected_change_timeout() with refcount held\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fB_dbus_server_trace_ref\fP (\fBDBusServer\fP *server, int old_refcount, int new_refcount, const char *why)"
+.br
+.ti -1c
+.RI "\fBdbus_bool_t\fP \fB_dbus_server_init_base\fP (\fBDBusServer\fP *server, const \fBDBusServerVTable\fP *vtable, const \fBDBusString\fP *address, \fBDBusError\fP *error)"
+.br
+.RI "Initializes the members of the \fBDBusServer\fP base class\&. "
+.ti -1c
+.RI "void \fB_dbus_server_finalize_base\fP (\fBDBusServer\fP *server)"
+.br
+.RI "Finalizes the members of the \fBDBusServer\fP base class\&. "
+.ti -1c
+.RI "\fBdbus_bool_t\fP \fB_dbus_server_add_watch\fP (\fBDBusServer\fP *server, \fBDBusWatch\fP *watch)"
+.br
+.RI "Adds a watch for this server, chaining out to application-provided watch handlers\&. "
+.ti -1c
+.RI "void \fB_dbus_server_remove_watch\fP (\fBDBusServer\fP *server, \fBDBusWatch\fP *watch)"
+.br
+.RI "Removes a watch previously added with \fB_dbus_server_remove_watch()\fP\&. "
+.ti -1c
+.RI "void \fB_dbus_server_toggle_all_watches\fP (\fBDBusServer\fP *server, \fBdbus_bool_t\fP enabled)"
+.br
+.RI "Toggles all watch and notifies app via server's DBusWatchToggledFunction if available\&. "
+.ti -1c
+.RI "\fBdbus_bool_t\fP \fB_dbus_server_add_timeout\fP (\fBDBusServer\fP *server, \fBDBusTimeout\fP *timeout)"
+.br
+.RI "Adds a timeout for this server, chaining out to application-provided timeout handlers\&. "
+.ti -1c
+.RI "void \fB_dbus_server_remove_timeout\fP (\fBDBusServer\fP *server, \fBDBusTimeout\fP *timeout)"
+.br
+.RI "Removes a timeout previously added with \fB_dbus_server_add_timeout()\fP\&. "
+.ti -1c
+.RI "void \fB_dbus_server_toggle_timeout\fP (\fBDBusServer\fP *server, \fBDBusTimeout\fP *timeout, \fBdbus_bool_t\fP enabled)"
+.br
+.RI "Toggles a timeout and notifies app via server's DBusTimeoutToggledFunction if available\&. "
+.ti -1c
+.RI "void \fB_dbus_server_ref_unlocked\fP (\fBDBusServer\fP *server)"
+.br
+.RI "Like \fBdbus_server_ref()\fP but does not acquire the lock (must already be held) "
+.ti -1c
+.RI "void \fB_dbus_server_unref_unlocked\fP (\fBDBusServer\fP *server)"
+.br
+.RI "Like \fBdbus_server_unref()\fP but does not acquire the lock (must already be held) "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation details of \fBDBusServer\fP\&. 
+
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBdbus_bool_t\fP _dbus_server_add_timeout (\fBDBusServer\fP * server, \fBDBusTimeout\fP * timeout)"
+
+.PP
+Adds a timeout for this server, chaining out to application-provided timeout handlers\&. The timeout should be repeatedly handled with \fBdbus_timeout_handle()\fP at its given interval until it is removed\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIserver\fP the server\&. 
+.br
+\fItimeout\fP the timeout to add\&. 
+.RE
+.PP
+
+.PP
+Definition at line 405 of file dbus\-server\&.c\&.
+.SS "\fBdbus_bool_t\fP _dbus_server_add_watch (\fBDBusServer\fP * server, \fBDBusWatch\fP * watch)"
+
+.PP
+Adds a watch for this server, chaining out to application-provided watch handlers\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIserver\fP the server\&. 
+.br
+\fIwatch\fP the watch to add\&. 
+.RE
+.PP
+
+.PP
+Definition at line 296 of file dbus\-server\&.c\&.
+.SS "void _dbus_server_finalize_base (\fBDBusServer\fP * server)"
+
+.PP
+Finalizes the members of the \fBDBusServer\fP base class\&. Chained up to by subclass finalizers\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIserver\fP the server\&. 
+.RE
+.PP
+
+.PP
+Definition at line 201 of file dbus\-server\&.c\&.
+.PP
+References _dbus_assert, _dbus_data_slot_list_free(), _dbus_rmutex_free_at_location(), _dbus_string_free(), _dbus_timeout_list_free(), _dbus_watch_list_free(), DBusServer::address, DBusServer::auth_mechanisms, dbus_free(), dbus_free_string_array(), dbus_server_set_new_connection_function(), DBusServer::disconnected, DBusServer::guid_hex, DBusServer::have_server_lock, DBusServer::mutex, NULL, DBusServer::slot_list, DBusServer::timeouts, and DBusServer::watches\&.
+.SS "\fBdbus_bool_t\fP _dbus_server_init_base (\fBDBusServer\fP * server, const \fBDBusServerVTable\fP * vtable, const \fBDBusString\fP * address, \fBDBusError\fP * error)"
+
+.PP
+Initializes the members of the \fBDBusServer\fP base class\&. Chained up to by subclass constructors\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIserver\fP the server\&. 
+.br
+\fIvtable\fP the vtable for the subclass\&. 
+.br
+\fIaddress\fP the server's address 
+.br
+\fIerror\fP location to store reason for failure 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBTRUE\fP on success\&. 
+.RE
+.PP
+
+.PP
+Definition at line 112 of file dbus\-server\&.c\&.
+.PP
+References _dbus_assert, _dbus_atomic_inc(), _dbus_generate_uuid(), _dbus_string_init(), _dbus_uuid_encode(), DBusServer::address, FALSE, DBusServer::guid, DBusServer::guid_hex, NULL, DBusServer::published_address, DBusServer::refcount, DBusServer::timeouts, DBusServer::vtable, and DBusServer::watches\&.
+.SS "void _dbus_server_ref_unlocked (\fBDBusServer\fP * server)"
+
+.PP
+Like \fBdbus_server_ref()\fP but does not acquire the lock (must already be held) 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIserver\fP the server\&. 
+.RE
+.PP
+
+.PP
+Definition at line 456 of file dbus\-server\&.c\&.
+.PP
+References _dbus_assert, _dbus_atomic_inc(), NULL, and DBusServer::refcount\&.
+.SS "void _dbus_server_remove_timeout (\fBDBusServer\fP * server, \fBDBusTimeout\fP * timeout)"
+
+.PP
+Removes a timeout previously added with \fB_dbus_server_add_timeout()\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIserver\fP the server\&. 
+.br
+\fItimeout\fP the timeout to remove\&. 
+.RE
+.PP
+
+.PP
+Definition at line 420 of file dbus\-server\&.c\&.
+.SS "void _dbus_server_remove_watch (\fBDBusServer\fP * server, \fBDBusWatch\fP * watch)"
+
+.PP
+Removes a watch previously added with \fB_dbus_server_remove_watch()\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIserver\fP the server\&. 
+.br
+\fIwatch\fP the watch to remove\&. 
+.RE
+.PP
+
+.PP
+Definition at line 312 of file dbus\-server\&.c\&.
+.SS "void _dbus_server_toggle_all_watches (\fBDBusServer\fP * server, \fBdbus_bool_t\fP enabled)"
+
+.PP
+Toggles all watch and notifies app via server's DBusWatchToggledFunction if available\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIserver\fP the server\&. 
+.br
+\fIenabled\fP whether to enable or disable 
+.RE
+.PP
+
+.PP
+Definition at line 330 of file dbus\-server\&.c\&.
+.PP
+References _dbus_watch_list_toggle_all_watches(), and DBusServer::watches\&.
+.SS "void _dbus_server_toggle_timeout (\fBDBusServer\fP * server, \fBDBusTimeout\fP * timeout, \fBdbus_bool_t\fP enabled)"
+
+.PP
+Toggles a timeout and notifies app via server's DBusTimeoutToggledFunction if available\&. It's an error to call this function on a timeout that was not previously added\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIserver\fP the server\&. 
+.br
+\fItimeout\fP the timeout to toggle\&. 
+.br
+\fIenabled\fP whether to enable or disable 
+.RE
+.PP
+
+.PP
+Definition at line 439 of file dbus\-server\&.c\&.
+.SS "void _dbus_server_unref_unlocked (\fBDBusServer\fP * server)"
+
+.PP
+Like \fBdbus_server_unref()\fP but does not acquire the lock (must already be held) 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIserver\fP the server\&. 
+.RE
+.PP
+
+.PP
+Definition at line 475 of file dbus\-server\&.c\&.
+.PP
+References _dbus_assert, _dbus_atomic_dec(), NULL, and DBusServer::refcount\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

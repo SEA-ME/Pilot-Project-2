@@ -1,0 +1,34 @@
+.TH "BusData" 3dbus "Thu Oct 6 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BusData \- Block of message-bus-related data we attach to each \fBDBusConnection\fP used with these convenience functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBDBusConnection\fP * \fBconnection\fP"
+.br
+.RI "Connection we're associated with\&. "
+.ti -1c
+.RI "char * \fBunique_name\fP"
+.br
+.RI "Unique name of this connection\&. "
+.ti -1c
+.RI "unsigned int \fBis_well_known\fP: 1"
+.br
+.RI "Is one of the well-known connections in our global array\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Block of message-bus-related data we attach to each \fBDBusConnection\fP used with these convenience functions\&. 
+.PP
+Definition at line 77 of file dbus\-bus\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

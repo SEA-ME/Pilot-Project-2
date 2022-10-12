@@ -1,0 +1,31 @@
+.TH "DBusCondVar" 3dbus "Thu Oct 6 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusCondVar
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "pthread_cond_t \fBcond\fP"
+.br
+.RI "the condition "
+.ti -1c
+.RI "\fBDBusList\fP * \fBlist\fP"
+.br
+.RI "list thread-local-stored events waiting on the cond variable "
+.ti -1c
+.RI "CRITICAL_SECTION \fBlock\fP"
+.br
+.RI "lock protecting the list "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 56 of file dbus\-sysdeps\-pthread\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

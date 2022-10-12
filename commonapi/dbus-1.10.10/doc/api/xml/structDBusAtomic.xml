@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDBusAtomic" kind="struct" language="C++" prot="public">
+    <compoundname>DBusAtomic</compoundname>
+    <includes refid="dbus-sysdeps_8h" local="no">dbus-sysdeps.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDBusAtomic_1aef100f17856a635a9d0f3cae7a7f6bf8" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DBusTypes_1gab18afa60e9b17b6e322735bda3d863d8" kindref="member">dbus_int32_t</ref></type>
+        <definition>volatile dbus_int32_t DBusAtomic::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>Value of the atomic integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-sysdeps.h" line="284" column="1" bodyfile="dbus/dbus-sysdeps.h" bodystart="284" bodyend="-1"/>
+        <referencedby refid="group__DBusSysdeps_1ga43a4376739482af393f8719b428f529b" compoundref="dbus-sysdeps-unix_8c" startline="2776" endline="2790">_dbus_atomic_dec</referencedby>
+        <referencedby refid="group__DBusSysdeps_1ga54efe0662d88aa9fffb9b5d92dcfd7a1" compoundref="dbus-sysdeps-unix_8c" startline="2800" endline="2814">_dbus_atomic_get</referencedby>
+        <referencedby refid="group__DBusSysdeps_1gaa479b9fc0d2bb007667654d07452344e" compoundref="dbus-sysdeps-unix_8c" startline="2753" endline="2767">_dbus_atomic_inc</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An atomic integer safe to increment or decrement from multiple threads. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dbus/dbus-sysdeps.h" line="280" column="1" bodyfile="dbus/dbus-sysdeps.h" bodystart="279" bodyend="286"/>
+    <listofallmembers>
+      <member refid="structDBusAtomic_1aef100f17856a635a9d0f3cae7a7f6bf8" prot="public" virt="non-virtual"><scope>DBusAtomic</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

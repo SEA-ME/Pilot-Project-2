@@ -1,0 +1,30 @@
+.TH "DBusAuthCommandName" 3dbus "Thu Oct 6 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusAuthCommandName \- Mapping from command name to enum\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "const char * \fBname\fP"
+.br
+.RI "Name of the command\&. "
+.ti -1c
+.RI "\fBDBusAuthCommand\fP \fBcommand\fP"
+.br
+.RI "Corresponding enum\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Mapping from command name to enum\&. 
+.PP
+Definition at line 2129 of file dbus\-auth\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

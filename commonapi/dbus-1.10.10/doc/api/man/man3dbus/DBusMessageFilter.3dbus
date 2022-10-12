@@ -1,0 +1,38 @@
+.TH "DBusMessageFilter" 3dbus "Thu Oct 6 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusMessageFilter \- Internal struct representing a message filter function\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBDBusAtomic\fP \fBrefcount\fP"
+.br
+.RI "Reference count\&. "
+.ti -1c
+.RI "\fBDBusHandleMessageFunction\fP \fBfunction\fP"
+.br
+.RI "Function to call to filter\&. "
+.ti -1c
+.RI "void * \fBuser_data\fP"
+.br
+.RI "User data for the function\&. "
+.ti -1c
+.RI "\fBDBusFreeFunction\fP \fBfree_user_data_function\fP"
+.br
+.RI "Function to free the user data\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Internal struct representing a message filter function\&. 
+.PP
+Definition at line 228 of file dbus\-connection\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

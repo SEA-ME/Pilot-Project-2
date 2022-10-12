@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDBusMessageIter__1__10__0" kind="struct" language="C++" prot="public">
+    <compoundname>DBusMessageIter_1_10_0</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1a5547c5abf6b4f9e122c679b95cc8c42e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DBusMessageIter_1_10_0::dummy1</definition>
+        <argsstring></argsstring>
+        <name>dummy1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="146" column="1" bodyfile="dbus/dbus-message.c" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1ad678340059e4fa1dce1e44c1dad9ba06" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DBusMessageIter_1_10_0::dummy2</definition>
+        <argsstring></argsstring>
+        <name>dummy2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="147" column="1" bodyfile="dbus/dbus-message.c" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1af1bb6e065b69a0cb2cca0efe6fe5b0c5" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DBusTypes_1gaf513803b030613a669cc7ef199f90a8b" kindref="member">dbus_uint32_t</ref></type>
+        <definition>dbus_uint32_t DBusMessageIter_1_10_0::dummy3</definition>
+        <argsstring></argsstring>
+        <name>dummy3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="148" column="1" bodyfile="dbus/dbus-message.c" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1a4dfcebefc1ea3b57514e911967c59f14" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DBusMessageIter_1_10_0::dummy4</definition>
+        <argsstring></argsstring>
+        <name>dummy4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="149" column="1" bodyfile="dbus/dbus-message.c" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1a8ba33ecd844c669f77f9cd9ef564691a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DBusMessageIter_1_10_0::dummy5</definition>
+        <argsstring></argsstring>
+        <name>dummy5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="150" column="1" bodyfile="dbus/dbus-message.c" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1a773d89e11f11f9b0d990f84f428b1d14" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DBusMessageIter_1_10_0::dummy6</definition>
+        <argsstring></argsstring>
+        <name>dummy6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="151" column="1" bodyfile="dbus/dbus-message.c" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1a0d4a26c85d53e1eb32b3c09fdbf8656b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DBusMessageIter_1_10_0::dummy7</definition>
+        <argsstring></argsstring>
+        <name>dummy7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="152" column="1" bodyfile="dbus/dbus-message.c" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1a6cf4052726d32f070d55e7dbf9affb5d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DBusMessageIter_1_10_0::dummy8</definition>
+        <argsstring></argsstring>
+        <name>dummy8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="153" column="1" bodyfile="dbus/dbus-message.c" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1a1b8e6b89d09b81923c853ebcffe14e71" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DBusMessageIter_1_10_0::dummy9</definition>
+        <argsstring></argsstring>
+        <name>dummy9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="154" column="1" bodyfile="dbus/dbus-message.c" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1af75f845585f74d469e67b2414754e1ce" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DBusMessageIter_1_10_0::dummy10</definition>
+        <argsstring></argsstring>
+        <name>dummy10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="155" column="1" bodyfile="dbus/dbus-message.c" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1a3ed9f459334f917b8e738dbc8c14753f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DBusMessageIter_1_10_0::dummy11</definition>
+        <argsstring></argsstring>
+        <name>dummy11</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="156" column="1" bodyfile="dbus/dbus-message.c" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1a7743bf6703f953609f8961eaf2fc245e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DBusMessageIter_1_10_0::pad1</definition>
+        <argsstring></argsstring>
+        <name>pad1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="157" column="1" bodyfile="dbus/dbus-message.c" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1a19134c5d4004f9148c136fbef445e1fb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DBusMessageIter_1_10_0::pad2</definition>
+        <argsstring></argsstring>
+        <name>pad2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="158" column="1" bodyfile="dbus/dbus-message.c" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageIter__1__10__0_1ab320c70d052160fd44f9c91a80302463" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DBusMessageIter_1_10_0::pad3</definition>
+        <argsstring></argsstring>
+        <name>pad3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dbus/dbus-message.c" line="159" column="1" bodyfile="dbus/dbus-message.c" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Layout of a <ref refid="structDBusMessageIter" kindref="compound">DBusMessageIter</ref> on the stack in dbus 1.10.0. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is no longer used, but for ABI compatibility we need to assert that the new layout is the same size. </para>    </detaileddescription>
+    <location file="dbus/dbus-message.c" line="145" column="1" bodyfile="dbus/dbus-message.c" bodystart="144" bodyend="160"/>
+    <listofallmembers>
+      <member refid="structDBusMessageIter__1__10__0_1a5547c5abf6b4f9e122c679b95cc8c42e" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>dummy1</name></member>
+      <member refid="structDBusMessageIter__1__10__0_1af75f845585f74d469e67b2414754e1ce" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>dummy10</name></member>
+      <member refid="structDBusMessageIter__1__10__0_1a3ed9f459334f917b8e738dbc8c14753f" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>dummy11</name></member>
+      <member refid="structDBusMessageIter__1__10__0_1ad678340059e4fa1dce1e44c1dad9ba06" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>dummy2</name></member>
+      <member refid="structDBusMessageIter__1__10__0_1af1bb6e065b69a0cb2cca0efe6fe5b0c5" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>dummy3</name></member>
+      <member refid="structDBusMessageIter__1__10__0_1a4dfcebefc1ea3b57514e911967c59f14" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>dummy4</name></member>
+      <member refid="structDBusMessageIter__1__10__0_1a8ba33ecd844c669f77f9cd9ef564691a" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>dummy5</name></member>
+      <member refid="structDBusMessageIter__1__10__0_1a773d89e11f11f9b0d990f84f428b1d14" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>dummy6</name></member>
+      <member refid="structDBusMessageIter__1__10__0_1a0d4a26c85d53e1eb32b3c09fdbf8656b" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>dummy7</name></member>
+      <member refid="structDBusMessageIter__1__10__0_1a6cf4052726d32f070d55e7dbf9affb5d" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>dummy8</name></member>
+      <member refid="structDBusMessageIter__1__10__0_1a1b8e6b89d09b81923c853ebcffe14e71" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>dummy9</name></member>
+      <member refid="structDBusMessageIter__1__10__0_1a7743bf6703f953609f8961eaf2fc245e" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>pad1</name></member>
+      <member refid="structDBusMessageIter__1__10__0_1a19134c5d4004f9148c136fbef445e1fb" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>pad2</name></member>
+      <member refid="structDBusMessageIter__1__10__0_1ab320c70d052160fd44f9c91a80302463" prot="public" virt="non-virtual"><scope>DBusMessageIter_1_10_0</scope><name>pad3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

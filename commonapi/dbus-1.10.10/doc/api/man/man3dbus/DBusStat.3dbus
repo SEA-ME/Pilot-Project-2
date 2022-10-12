@@ -1,0 +1,56 @@
+.TH "DBusStat" 3dbus "Thu Oct 6 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusStat \- Portable struct with stat() results\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dbus\-sysdeps\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "unsigned long \fBmode\fP"
+.br
+.RI "File mode\&. "
+.ti -1c
+.RI "unsigned long \fBnlink\fP"
+.br
+.RI "Number of hard links\&. "
+.ti -1c
+.RI "\fBdbus_uid_t\fP \fBuid\fP"
+.br
+.RI "User owning file\&. "
+.ti -1c
+.RI "\fBdbus_gid_t\fP \fBgid\fP"
+.br
+.RI "Group owning file\&. "
+.ti -1c
+.RI "unsigned long \fBsize\fP"
+.br
+.RI "Size of file\&. "
+.ti -1c
+.RI "unsigned long \fBatime\fP"
+.br
+.RI "Access time\&. "
+.ti -1c
+.RI "unsigned long \fBmtime\fP"
+.br
+.RI "Modify time\&. "
+.ti -1c
+.RI "unsigned long \fBctime\fP"
+.br
+.RI "Creation time\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Portable struct with stat() results\&. 
+.PP
+Definition at line 501 of file dbus\-sysdeps\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

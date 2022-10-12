@@ -1,0 +1,74 @@
+.TH "DBusWatchList" 3dbus "Thu Oct 6 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusWatchList \- \fBDBusWatchList\fP implementation details\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBDBusList\fP * \fBwatches\fP"
+.br
+.RI "Watch objects\&. "
+.ti -1c
+.RI "\fBDBusAddWatchFunction\fP \fBadd_watch_function\fP"
+.br
+.RI "Callback for adding a watch\&. "
+.ti -1c
+.RI "\fBDBusRemoveWatchFunction\fP \fBremove_watch_function\fP"
+.br
+.RI "Callback for removing a watch\&. "
+.ti -1c
+.RI "\fBDBusWatchToggledFunction\fP \fBwatch_toggled_function\fP"
+.br
+.RI "Callback on toggling enablement\&. "
+.ti -1c
+.RI "void * \fBwatch_data\fP"
+.br
+.RI "Data for watch callbacks\&. "
+.ti -1c
+.RI "\fBDBusFreeFunction\fP \fBwatch_free_data_function\fP"
+.br
+.RI "Free function for watch callback data\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBDBusWatchList\fP implementation details\&. 
+
+All fields are private\&. 
+.PP
+Definition at line 214 of file dbus\-watch\&.c\&.
+.SH "Field Documentation"
+.PP 
+.SS "\fBDBusAddWatchFunction\fP DBusWatchList::add_watch_function"
+
+.PP
+Callback for adding a watch\&. 
+.PP
+Definition at line 218 of file dbus\-watch\&.c\&.
+.PP
+Referenced by _dbus_watch_list_add_watch()\&.
+.SS "\fBDBusRemoveWatchFunction\fP DBusWatchList::remove_watch_function"
+
+.PP
+Callback for removing a watch\&. 
+.PP
+Definition at line 219 of file dbus\-watch\&.c\&.
+.PP
+Referenced by _dbus_watch_list_remove_watch()\&.
+.SS "\fBDBusList\fP* DBusWatchList::watches"
+
+.PP
+Watch objects\&. 
+.PP
+Definition at line 216 of file dbus\-watch\&.c\&.
+.PP
+Referenced by _dbus_watch_list_add_watch(), _dbus_watch_list_free(), _dbus_watch_list_remove_watch(), _dbus_watch_list_set_functions(), and _dbus_watch_list_toggle_all_watches()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

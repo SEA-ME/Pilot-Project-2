@@ -1,0 +1,31 @@
+.TH "DBusPollFD" 3dbus "Thu Oct 6 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusPollFD
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "DBusPollable \fBfd\fP"
+.br
+.RI "File descriptor\&. "
+.ti -1c
+.RI "short \fBevents\fP"
+.br
+.RI "Events to poll for\&. "
+.ti -1c
+.RI "short \fBrevents\fP"
+.br
+.RI "Events that occurred\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 380 of file dbus\-sysdeps\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.
