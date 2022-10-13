@@ -6,7 +6,7 @@ internals/syslog.o: internals/syslog.c /usr/include/stdc-predef.h \
  /usr/include/arm-linux-gnueabihf/bits/long-double.h \
  /usr/include/arm-linux-gnueabihf/gnu/stubs.h \
  /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h \
  /usr/include/arm-linux-gnueabihf/bits/waitflags.h \
  /usr/include/arm-linux-gnueabihf/bits/waitstatus.h \
  /usr/include/arm-linux-gnueabihf/bits/floatn.h \
@@ -40,15 +40,15 @@ internals/syslog.o: internals/syslog.c /usr/include/stdc-predef.h \
  /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/arm-linux-gnueabihf/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed/limits.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed/syslimits.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include-fixed/limits.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/arm-linux-gnueabihf/bits/posix1_lim.h \
  /usr/include/arm-linux-gnueabihf/bits/local_lim.h \
  /usr/include/linux/limits.h \
  /usr/include/arm-linux-gnueabihf/bits/posix2_lim.h \
  /usr/include/arm-linux-gnueabihf/bits/xopen_lim.h \
  /usr/include/arm-linux-gnueabihf/bits/uio_lim.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/float.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/float.h \
  /usr/include/glib-2.0/glib/gversionmacros.h /usr/include/time.h \
  /usr/include/arm-linux-gnueabihf/bits/time.h \
  /usr/include/arm-linux-gnueabihf/bits/timex.h \
@@ -58,7 +58,7 @@ internals/syslog.o: internals/syslog.c /usr/include/stdc-predef.h \
  /usr/include/glib-2.0/glib/gasyncqueue.h \
  /usr/include/glib-2.0/glib/gthread.h \
  /usr/include/glib-2.0/glib/gatomic.h /usr/include/glib-2.0/glib/gerror.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h \
  /usr/include/glib-2.0/glib/gquark.h /usr/include/glib-2.0/glib/gutils.h \
  /usr/include/glib-2.0/glib/gbacktrace.h /usr/include/signal.h \
  /usr/include/arm-linux-gnueabihf/bits/signum.h \
@@ -150,7 +150,7 @@ internals/syslog.o: internals/syslog.c /usr/include/stdc-predef.h \
  ../dbus/dbus-pending-call.h ../dbus/dbus-server.h \
  ../dbus/dbus-signature.h ../dbus/dbus-syntax.h ../dbus/dbus-threads.h \
  ../dbus/dbus-sysdeps.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h \
  /usr/include/stdint.h /usr/include/arm-linux-gnueabihf/bits/wchar.h \
  /usr/include/arm-linux-gnueabihf/bits/stdint-uintn.h \
  /usr/include/inttypes.h ../dbus/dbus-file.h ../dbus/dbus-string.h \
@@ -189,7 +189,7 @@ internals/syslog.o: internals/syslog.c /usr/include/stdc-predef.h \
 
 /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h:
 
 /usr/include/arm-linux-gnueabihf/bits/waitflags.h:
 
@@ -261,9 +261,9 @@ internals/syslog.o: internals/syslog.c /usr/include/stdc-predef.h \
 
 /usr/include/glib-2.0/glib/gmacros.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed/limits.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include-fixed/limits.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed/syslimits.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
@@ -279,7 +279,7 @@ internals/syslog.o: internals/syslog.c /usr/include/stdc-predef.h \
 
 /usr/include/arm-linux-gnueabihf/bits/uio_lim.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/float.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/float.h:
 
 /usr/include/glib-2.0/glib/gversionmacros.h:
 
@@ -303,7 +303,7 @@ internals/syslog.o: internals/syslog.c /usr/include/stdc-predef.h \
 
 /usr/include/glib-2.0/glib/gerror.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h:
 
 /usr/include/glib-2.0/glib/gquark.h:
 
@@ -549,7 +549,7 @@ internals/syslog.o: internals/syslog.c /usr/include/stdc-predef.h \
 
 ../dbus/dbus-sysdeps.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h:
 
 /usr/include/stdint.h:
 

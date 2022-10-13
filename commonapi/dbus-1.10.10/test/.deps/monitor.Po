@@ -6,7 +6,7 @@ monitor.o: monitor.c /usr/include/stdc-predef.h ../config.h \
  /usr/include/arm-linux-gnueabihf/bits/long-double.h \
  /usr/include/arm-linux-gnueabihf/gnu/stubs.h \
  /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h \
  /usr/include/arm-linux-gnueabihf/bits/types/locale_t.h \
  /usr/include/arm-linux-gnueabihf/bits/types/__locale_t.h \
  /usr/include/strings.h test-utils-glib.h ../dbus/dbus.h \
@@ -14,22 +14,22 @@ monitor.o: monitor.c /usr/include/stdc-predef.h ../config.h \
  ../dbus/dbus-types.h ../dbus/dbus-errors.h ../dbus/dbus-protocol.h \
  ../dbus/dbus-bus.h ../dbus/dbus-connection.h ../dbus/dbus-memory.h \
  ../dbus/dbus-message.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h \
  ../dbus/dbus-shared.h ../dbus/dbus-misc.h ../dbus/dbus-pending-call.h \
  ../dbus/dbus-server.h ../dbus/dbus-signature.h ../dbus/dbus-syntax.h \
  ../dbus/dbus-threads.h /usr/include/glib-2.0/glib.h \
  /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/arm-linux-gnueabihf/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed/limits.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed/syslimits.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include-fixed/limits.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/arm-linux-gnueabihf/bits/posix1_lim.h \
  /usr/include/arm-linux-gnueabihf/bits/local_lim.h \
  /usr/include/linux/limits.h \
  /usr/include/arm-linux-gnueabihf/bits/posix2_lim.h \
  /usr/include/arm-linux-gnueabihf/bits/xopen_lim.h \
  /usr/include/arm-linux-gnueabihf/bits/uio_lim.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/float.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/float.h \
  /usr/include/glib-2.0/glib/gversionmacros.h /usr/include/time.h \
  /usr/include/arm-linux-gnueabihf/bits/time.h \
  /usr/include/arm-linux-gnueabihf/bits/types.h \
@@ -162,7 +162,7 @@ monitor.o: monitor.c /usr/include/stdc-predef.h ../config.h \
  /usr/include/arm-linux-gnueabihf/bits/stdlib-bsearch.h \
  /usr/include/arm-linux-gnueabihf/bits/stdlib-float.h \
  ../dbus/dbus-mainloop.h ../dbus/dbus-internals.h ../dbus/dbus-sysdeps.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h \
  /usr/include/stdint.h /usr/include/arm-linux-gnueabihf/bits/wchar.h \
  /usr/include/arm-linux-gnueabihf/bits/stdint-uintn.h \
  /usr/include/inttypes.h ../dbus/dbus-file.h ../dbus/dbus-string.h \
@@ -190,7 +190,7 @@ monitor.o: monitor.c /usr/include/stdc-predef.h ../config.h \
 
 /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h:
 
 /usr/include/arm-linux-gnueabihf/bits/types/locale_t.h:
 
@@ -222,7 +222,7 @@ test-utils-glib.h:
 
 ../dbus/dbus-message.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h:
 
 ../dbus/dbus-shared.h:
 
@@ -248,9 +248,9 @@ test-utils-glib.h:
 
 /usr/include/glib-2.0/glib/gmacros.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed/limits.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include-fixed/limits.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed/syslimits.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
@@ -266,7 +266,7 @@ test-utils-glib.h:
 
 /usr/include/arm-linux-gnueabihf/bits/uio_lim.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/float.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/float.h:
 
 /usr/include/glib-2.0/glib/gversionmacros.h:
 
@@ -580,7 +580,7 @@ test-utils.h:
 
 ../dbus/dbus-sysdeps.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h:
 
 /usr/include/stdint.h:
 

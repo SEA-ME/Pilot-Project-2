@@ -6,8 +6,8 @@ dbus-print-message.o: dbus-print-message.c /usr/include/stdc-predef.h \
  /usr/include/arm-linux-gnueabihf/bits/long-double.h \
  /usr/include/arm-linux-gnueabihf/gnu/stubs.h \
  /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h \
  /usr/include/arm-linux-gnueabihf/bits/types.h \
  /usr/include/arm-linux-gnueabihf/bits/typesizes.h \
  /usr/include/arm-linux-gnueabihf/bits/types/__fpos_t.h \
@@ -104,9 +104,9 @@ dbus-print-message.h:
 
 /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h:
 
 /usr/include/arm-linux-gnueabihf/bits/types.h:
 

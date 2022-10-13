@@ -36,6 +36,7 @@ PATH: /sbin
 PATH: /bin
 PATH: /usr/local/games
 PATH: /usr/games
+PATH: /usr/local/jdk1.8.0_321/bin
 
 
 ## ----------- ##
@@ -92,8 +93,8 @@ configure:3942: found /usr/bin/gcc
 configure:3953: result: gcc
 configure:4182: checking for C compiler version
 configure:4191: gcc --version >&5
-gcc (Raspbian 8.3.0-6+rpi1) 8.3.0
-Copyright (C) 2018 Free Software Foundation, Inc.
+gcc (Raspbian 5.5.0-8) 5.5.0 20171010
+Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
@@ -101,11 +102,11 @@ configure:4202: $? = 0
 configure:4191: gcc -v >&5
 Using built-in specs.
 COLLECT_GCC=gcc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper
 Target: arm-linux-gnueabihf
-Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Raspbian 5.5.0-8' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-armhf/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-armhf --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-armhf --with-arch-directory=arm --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
 Thread model: posix
-gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
+gcc version 5.5.0 20171010 (Raspbian 5.5.0-8) 
 configure:4202: $? = 0
 configure:4191: gcc -V >&5
 gcc: error: unrecognized command line option '-V'
@@ -113,7 +114,7 @@ gcc: fatal error: no input files
 compilation terminated.
 configure:4202: $? = 1
 configure:4191: gcc -qversion >&5
-gcc: error: unrecognized command line option '-qversion'; did you mean '--version'?
+gcc: error: unrecognized command line option '-qversion'
 gcc: fatal error: no input files
 compilation terminated.
 configure:4202: $? = 1
@@ -164,8 +165,8 @@ configure:4965: found /usr/bin/g++
 configure:4976: result: g++
 configure:5003: checking for C++ compiler version
 configure:5012: g++ --version >&5
-g++ (Raspbian 8.3.0-6+rpi1) 8.3.0
-Copyright (C) 2018 Free Software Foundation, Inc.
+g++ (Raspbian 5.5.0-8) 5.5.0 20171010
+Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
@@ -173,11 +174,11 @@ configure:5023: $? = 0
 configure:5012: g++ -v >&5
 Using built-in specs.
 COLLECT_GCC=g++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper
 Target: arm-linux-gnueabihf
-Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Raspbian 5.5.0-8' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-armhf/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-armhf --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-armhf --with-arch-directory=arm --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
 Thread model: posix
-gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
+gcc version 5.5.0 20171010 (Raspbian 5.5.0-8) 
 configure:5023: $? = 0
 configure:5012: g++ -V >&5
 g++: error: unrecognized command line option '-V'
@@ -185,7 +186,7 @@ g++: fatal error: no input files
 compilation terminated.
 configure:5023: $? = 1
 configure:5012: g++ -qversion >&5
-g++: error: unrecognized command line option '-qversion'; did you mean '--version'?
+g++: error: unrecognized command line option '-qversion'
 g++: fatal error: no input files
 compilation terminated.
 configure:5023: $? = 1
@@ -203,9 +204,7 @@ configure:5282: checking how to run the C preprocessor
 configure:5313: gcc -E  conftest.c
 configure:5313: $? = 0
 configure:5327: gcc -E  conftest.c
-conftest.c:13:10: fatal error: ac_nonexistent.h: No such file or directory
- #include <ac_nonexistent.h>
-          ^~~~~~~~~~~~~~~~~~
+conftest.c:13:28: fatal error: ac_nonexistent.h: No such file or directory
 compilation terminated.
 configure:5327: $? = 1
 configure: failed program was:
@@ -226,9 +225,7 @@ configure:5352: result: gcc -E
 configure:5372: gcc -E  conftest.c
 configure:5372: $? = 0
 configure:5386: gcc -E  conftest.c
-conftest.c:13:10: fatal error: ac_nonexistent.h: No such file or directory
- #include <ac_nonexistent.h>
-          ^~~~~~~~~~~~~~~~~~
+conftest.c:13:28: fatal error: ac_nonexistent.h: No such file or directory
 compilation terminated.
 configure:5386: $? = 1
 configure: failed program was:
@@ -295,9 +292,7 @@ configure:5662: $? = 0
 configure:5662: result: yes
 configure:5675: checking minix/config.h usability
 configure:5675: gcc -c -g -O2  conftest.c >&5
-conftest.c:56:10: fatal error: minix/config.h: No such file or directory
- #include <minix/config.h>
-          ^~~~~~~~~~~~~~~~
+conftest.c:56:26: fatal error: minix/config.h: No such file or directory
 compilation terminated.
 configure:5675: $? = 1
 configure: failed program was:
@@ -360,9 +355,7 @@ configure: failed program was:
 configure:5675: result: no
 configure:5675: checking minix/config.h presence
 configure:5675: gcc -E  conftest.c
-conftest.c:23:10: fatal error: minix/config.h: No such file or directory
- #include <minix/config.h>
-          ^~~~~~~~~~~~~~~~
+conftest.c:23:26: fatal error: minix/config.h: No such file or directory
 compilation terminated.
 configure:5675: $? = 1
 configure: failed program was:
@@ -400,33 +393,9 @@ configure:5742: checking for special C compiler options needed for large files
 configure:5787: result: no
 configure:5793: checking for _FILE_OFFSET_BITS value needed for large files
 configure:5818: gcc -c -g -O2  conftest.c >&5
-conftest.c:33:41: warning: result of '-2147483648 << 31' requires 63 bits to represent, but 'long int' only has 32 bits [-Wshift-overflow=]
- #define LARGE_OFF_T ((((off_t) 1 << 31) << 31) - 1 + (((off_t) 1 << 31) << 31))
-                                         ^~
-conftest.c:34:23: note: in expansion of macro 'LARGE_OFF_T'
+conftest.c:34:7: error: size of array 'off_t_is_large' is negative
    int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721
-                       ^~~~~~~~~~~
-conftest.c:33:73: warning: result of '-2147483648 << 31' requires 63 bits to represent, but 'long int' only has 32 bits [-Wshift-overflow=]
- #define LARGE_OFF_T ((((off_t) 1 << 31) << 31) - 1 + (((off_t) 1 << 31) << 31))
-                                                                         ^~
-conftest.c:34:23: note: in expansion of macro 'LARGE_OFF_T'
-   int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721
-                       ^~~~~~~~~~~
-conftest.c:33:41: warning: result of '-2147483648 << 31' requires 63 bits to represent, but 'long int' only has 32 bits [-Wshift-overflow=]
- #define LARGE_OFF_T ((((off_t) 1 << 31) << 31) - 1 + (((off_t) 1 << 31) << 31))
-                                         ^~
-conftest.c:35:13: note: in expansion of macro 'LARGE_OFF_T'
-          && LARGE_OFF_T % 2147483647 == 1)
-             ^~~~~~~~~~~
-conftest.c:33:73: warning: result of '-2147483648 << 31' requires 63 bits to represent, but 'long int' only has 32 bits [-Wshift-overflow=]
- #define LARGE_OFF_T ((((off_t) 1 << 31) << 31) - 1 + (((off_t) 1 << 31) << 31))
-                                                                         ^~
-conftest.c:35:13: note: in expansion of macro 'LARGE_OFF_T'
-          && LARGE_OFF_T % 2147483647 == 1)
-             ^~~~~~~~~~~
-conftest.c:34:7: error: variably modified 'off_t_is_large' at file scope
-   int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721
-       ^~~~~~~~~~~~~~
+       ^
 configure:5818: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -613,9 +582,7 @@ configure:10515: checking how to run the C++ preprocessor
 configure:10542: g++ -E  conftest.cpp
 configure:10542: $? = 0
 configure:10556: g++ -E  conftest.cpp
-conftest.cpp:32:10: fatal error: ac_nonexistent.h: No such file or directory
- #include <ac_nonexistent.h>
-          ^~~~~~~~~~~~~~~~~~
+conftest.cpp:32:28: fatal error: ac_nonexistent.h: No such file or directory
 compilation terminated.
 configure:10556: $? = 1
 configure: failed program was:
@@ -655,9 +622,7 @@ configure:10581: result: g++ -E
 configure:10601: g++ -E  conftest.cpp
 configure:10601: $? = 0
 configure:10615: g++ -E  conftest.cpp
-conftest.cpp:32:10: fatal error: ac_nonexistent.h: No such file or directory
- #include <ac_nonexistent.h>
-          ^~~~~~~~~~~~~~~~~~
+conftest.cpp:32:28: fatal error: ac_nonexistent.h: No such file or directory
 compilation terminated.
 configure:10615: $? = 1
 configure: failed program was:
@@ -800,21 +765,18 @@ configure:14530: result: 8
 configure:14544: checking size of __int64
 configure:14549: gcc -o conftest -g -O2   conftest.c  >&5
 conftest.c: In function 'longval':
-conftest.c:78:57: error: '__int64' undeclared (first use in this function); did you mean '__int64_t'?
+conftest.c:78:57: error: '__int64' undeclared (first use in this function)
  static long int longval () { return (long int) (sizeof (__int64)); }
-                                                         ^~~~~~~
-                                                         __int64_t
+                                                         ^
 conftest.c:78:57: note: each undeclared identifier is reported only once for each function it appears in
 conftest.c: In function 'ulongval':
-conftest.c:79:67: error: '__int64' undeclared (first use in this function); did you mean '__int64_t'?
+conftest.c:79:67: error: '__int64' undeclared (first use in this function)
  static unsigned long int ulongval () { return (long int) (sizeof (__int64)); }
-                                                                   ^~~~~~~
-                                                                   __int64_t
+                                                                   ^
 conftest.c: In function 'main':
-conftest.c:89:28: error: '__int64' undeclared (first use in this function); did you mean '__int64_t'?
+conftest.c:89:28: error: '__int64' undeclared (first use in this function)
    if (((long int) (sizeof (__int64))) < 0)
-                            ^~~~~~~
-                            __int64_t
+                            ^
 configure:14549: $? = 1
 configure: program exited with status 1
 configure: failed program was:
@@ -938,10 +900,10 @@ configure:14701: checking whether byte ordering is bigendian
 configure:14716: gcc -c -g -O2  conftest.c >&5
 conftest.c:48:9: error: unknown type name 'not'
          not a universal capable compiler
-         ^~~
+         ^
 conftest.c:48:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'universal'
          not a universal capable compiler
-               ^~~~~~~~~
+               ^
 conftest.c:48:15: error: unknown type name 'universal'
 configure:14716: $? = 1
 configure: failed program was:
@@ -1000,13 +962,12 @@ configure:14761: gcc -c -g -O2  conftest.c >&5
 configure:14761: $? = 0
 configure:14779: gcc -c -g -O2  conftest.c >&5
 conftest.c: In function 'main':
-conftest.c:54:4: error: unknown type name 'not'; did you mean 'ino_t'?
+conftest.c:54:4: error: unknown type name 'not'
     not big endian
-    ^~~
-    ino_t
+    ^
 conftest.c:54:12: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'endian'
     not big endian
-            ^~~~~~
+            ^
 configure:14779: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1163,14 +1124,9 @@ configure:15099: gcc -o conftest -g -O2   conftest.c  >&5
 conftest.c: In function 'main':
 conftest.c:54:49: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
  int a = 4; int b = __sync_sub_and_fetch(&a, 4); exit(b);
-                                                 ^~~~
+                                                 ^
 conftest.c:54:49: warning: incompatible implicit declaration of built-in function 'exit'
 conftest.c:54:49: note: include '<stdlib.h>' or provide a declaration of 'exit'
-conftest.c:1:1:
- /* confdefs.h */
-conftest.c:54:49:
- int a = 4; int b = __sync_sub_and_fetch(&a, 4); exit(b);
-                                                 ^~~~
 configure:15099: $? = 0
 configure:15108: result: yes
 configure:15124: checking for library containing socket
@@ -1183,9 +1139,9 @@ configure:15180: $? = 0
 configure:15180: result: yes
 configure:15235: checking for vsnprintf
 configure:15235: gcc -o conftest -g -O2   conftest.c  >&5
-conftest.c:73:6: warning: conflicting types for built-in function 'vsnprintf' [-Wbuiltin-declaration-mismatch]
+conftest.c:73:6: warning: conflicting types for built-in function 'vsnprintf'
  char vsnprintf ();
-      ^~~~~~~~~
+      ^
 configure:15235: $? = 0
 configure:15235: result: yes
 configure:15235: checking for vasprintf
@@ -1250,7 +1206,7 @@ configure:15235: $? = 0
 configure:15235: result: yes
 configure:15235: checking for issetugid
 configure:15235: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccmengum.o: in function `main':
+/usr/bin/ld: /tmp/ccImqfhK.o: in function `main':
 /home/pi/commonapi/dbus-1.10.10/conftest.c:100: undefined reference to `issetugid'
 collect2: error: ld returned 1 exit status
 configure:15235: $? = 1
@@ -1487,9 +1443,7 @@ configure:15594: checking for stdint.h
 configure:15594: result: yes
 configure:15607: checking ws2tcpip.h usability
 configure:15607: gcc -c -g -O2  conftest.c >&5
-conftest.c:118:10: fatal error: ws2tcpip.h: No such file or directory
- #include <ws2tcpip.h>
-          ^~~~~~~~~~~~
+conftest.c:118:22: fatal error: ws2tcpip.h: No such file or directory
 compilation terminated.
 configure:15607: $? = 1
 configure: failed program was:
@@ -1614,9 +1568,7 @@ configure: failed program was:
 configure:15607: result: no
 configure:15607: checking ws2tcpip.h presence
 configure:15607: gcc -E  conftest.c
-conftest.c:85:10: fatal error: ws2tcpip.h: No such file or directory
- #include <ws2tcpip.h>
-          ^~~~~~~~~~~~
+conftest.c:85:22: fatal error: ws2tcpip.h: No such file or directory
 compilation terminated.
 configure:15607: $? = 1
 configure: failed program was:
@@ -1744,9 +1696,7 @@ configure:15785: $? = 0
 configure:15785: result: yes
 configure:15801: checking sys/syslimits.h usability
 configure:15801: gcc -c -g -O2  conftest.c >&5
-conftest.c:123:10: fatal error: sys/syslimits.h: No such file or directory
- #include <sys/syslimits.h>
-          ^~~~~~~~~~~~~~~~~
+conftest.c:123:27: fatal error: sys/syslimits.h: No such file or directory
 compilation terminated.
 configure:15801: $? = 1
 configure: failed program was:
@@ -1876,9 +1826,7 @@ configure: failed program was:
 configure:15801: result: no
 configure:15801: checking sys/syslimits.h presence
 configure:15801: gcc -E  conftest.c
-conftest.c:90:10: fatal error: sys/syslimits.h: No such file or directory
- #include <sys/syslimits.h>
-          ^~~~~~~~~~~~~~~~~
+conftest.c:90:27: fatal error: sys/syslimits.h: No such file or directory
 compilation terminated.
 configure:15801: $? = 1
 configure: failed program was:
@@ -1992,7 +1940,7 @@ configure:15909: gcc -c -g -O2  conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:101:17: error: storage size of 'cred' isn't known
  struct cmsgcred cred;
-                 ^~~~
+                 ^
 configure:15909: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -2108,7 +2056,7 @@ configure:15924: gcc -c -g -O2  conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:98:23: error: storage size of 'ac_aggr' isn't known
  static struct unpcbid ac_aggr;
-                       ^~~~~~~
+                       ^
 configure:15924: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -2218,7 +2166,7 @@ configure:15924: gcc -c -g -O2  conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:98:23: error: storage size of 'ac_aggr' isn't known
  static struct unpcbid ac_aggr;
-                       ^~~~~~~
+                       ^
 configure:15924: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -2327,7 +2275,7 @@ configure: failed program was:
 configure:15924: result: no
 configure:15936: checking for getpeerucred
 configure:15936: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccisLPvW.o: in function `main':
+/usr/bin/ld: /tmp/ccmZ6TED.o: in function `main':
 /home/pi/commonapi/dbus-1.10.10/conftest.c:127: undefined reference to `getpeerucred'
 collect2: error: ld returned 1 exit status
 configure:15936: $? = 1
@@ -2465,7 +2413,7 @@ configure: failed program was:
 configure:15936: result: no
 configure:15936: checking for getpeereid
 configure:15936: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/cc4EDv2D.o: in function `main':
+/usr/bin/ld: /tmp/cc8JzTlm.o: in function `main':
 /home/pi/commonapi/dbus-1.10.10/conftest.c:127: undefined reference to `getpeereid'
 collect2: error: ld returned 1 exit status
 configure:15936: $? = 1
@@ -2635,7 +2583,7 @@ configure:16191: $? = 0
 configure:16208: result: none required
 configure:16218: checking for library containing pthread_mutexattr_init
 configure:16249: gcc -o conftest -g -O2   conftest.c   >&5
-/usr/bin/ld: /tmp/cc0F0Ens.o: in function `main':
+/usr/bin/ld: /tmp/ccu7y3Dp.o: in function `main':
 /home/pi/commonapi/dbus-1.10.10/conftest.c:108: undefined reference to `pthread_mutexattr_init'
 collect2: error: ld returned 1 exit status
 configure:16249: $? = 1
@@ -2776,22 +2724,22 @@ configure:16528: $? = 0
 configure:16537: result: yes
 configure:16548: checking for DBUS Flask permissions in selinux/av_permissions.h
 configure:16564: gcc -c -g -O2  conftest.c >&5
-In file included from conftest.c:98:
+In file included from conftest.c:98:0:
 /usr/include/selinux/av_permissions.h:1:2: warning: #warning "Please remove any #include of this header in your source code." [-Wcpp]
  #warning "Please remove any #include of this header in your source code."
-  ^~~~~~~
+  ^
 /usr/include/selinux/av_permissions.h:2:2: warning: #warning "Instead, use string_to_av_perm() to map the permission name to a value." [-Wcpp]
  #warning "Instead, use string_to_av_perm() to map the permission name to a value."
-  ^~~~~~~
+  ^
 conftest.c: In function 'main':
 conftest.c:102:26: warning: extra tokens at end of #ifdef directive
  #ifdef DBUS__ACQUIRE_SVC return 0;
-                          ^~~~~~
+                          ^
 configure:16564: $? = 0
 configure:16570: result: yes
 configure:16598: checking for pthread_create
 configure:16598: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccyxJ0f4.o: in function `main':
+/usr/bin/ld: /tmp/ccIhhjSV.o: in function `main':
 /home/pi/commonapi/dbus-1.10.10/conftest.c:132: undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
 configure:16598: $? = 1
@@ -2972,9 +2920,7 @@ configure:16819: $? = 0
 configure:16826: result: yes
 configure:16851: checking sys/event.h usability
 configure:16851: gcc -c -g -O2  conftest.c >&5
-conftest.c:136:10: fatal error: sys/event.h: No such file or directory
- #include <sys/event.h>
-          ^~~~~~~~~~~~~
+conftest.c:136:23: fatal error: sys/event.h: No such file or directory
 compilation terminated.
 configure:16851: $? = 1
 configure: failed program was:
@@ -3117,9 +3063,7 @@ configure: failed program was:
 configure:16851: result: no
 configure:16851: checking sys/event.h presence
 configure:16851: gcc -E  conftest.c
-conftest.c:103:10: fatal error: sys/event.h: No such file or directory
- #include <sys/event.h>
-          ^~~~~~~~~~~~~
+conftest.c:103:23: fatal error: sys/event.h: No such file or directory
 compilation terminated.
 configure:16851: $? = 1
 configure: failed program was:
@@ -3231,7 +3175,7 @@ configure:16851: checking for sys/event.h
 configure:16851: result: no
 configure:16859: checking for kqueue
 configure:16859: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccSiSiNw.o: in function `main':
+/usr/bin/ld: /tmp/ccwa9Z4z.o: in function `main':
 /home/pi/commonapi/dbus-1.10.10/conftest.c:137: undefined reference to `kqueue'
 collect2: error: ld returned 1 exit status
 configure:16859: $? = 1
@@ -3379,9 +3323,7 @@ configure: failed program was:
 configure:16859: result: no
 configure:16892: checking launch.h usability
 configure:16892: gcc -c -g -O2  conftest.c >&5
-conftest.c:136:10: fatal error: launch.h: No such file or directory
- #include <launch.h>
-          ^~~~~~~~~~
+conftest.c:136:20: fatal error: launch.h: No such file or directory
 compilation terminated.
 configure:16892: $? = 1
 configure: failed program was:
@@ -3524,9 +3466,7 @@ configure: failed program was:
 configure:16892: result: no
 configure:16892: checking launch.h presence
 configure:16892: gcc -E  conftest.c
-conftest.c:103:10: fatal error: launch.h: No such file or directory
- #include <launch.h>
-          ^~~~~~~~~~
+conftest.c:103:20: fatal error: launch.h: No such file or directory
 compilation terminated.
 configure:16892: $? = 1
 configure: failed program was:
@@ -3815,9 +3755,7 @@ configure: failed program was:
 configure:17296: result: no
 configure:17369: checking for ADT API
 configure:17385: gcc -c -g -O2  conftest.c >&5
-conftest.c:104:10: fatal error: bsm/adt.h: No such file or directory
- #include <bsm/adt.h>
-          ^~~~~~~~~~~
+conftest.c:104:21: fatal error: bsm/adt.h: No such file or directory
 compilation terminated.
 configure:17385: $? = 1
 configure: failed program was:
@@ -3941,235 +3879,30 @@ configure:17426: $? = 0
 configure:17427: result: supported
 configure:17587: checking for X
 configure:17695: gcc -E  conftest.c
-conftest.c:104:10: fatal error: X11/Xlib.h: No such file or directory
- #include <X11/Xlib.h>
-          ^~~~~~~~~~~~
-compilation terminated.
-configure:17695: $? = 1
-configure: failed program was:
-| /* confdefs.h */
-| #define PACKAGE_NAME "dbus"
-| #define PACKAGE_TARNAME "dbus"
-| #define PACKAGE_VERSION "1.10.10"
-| #define PACKAGE_STRING "dbus 1.10.10"
-| #define PACKAGE_BUGREPORT "https://bugs.freedesktop.org/enter_bug.cgi?product=dbus"
-| #define PACKAGE_URL ""
-| #define PACKAGE "dbus"
-| #define VERSION "1.10.10"
-| #define GETTEXT_PACKAGE "dbus-1"
-| #define DBUS_DAEMON_NAME "dbus-daemon"
-| #define STDC_HEADERS 1
-| #define HAVE_SYS_TYPES_H 1
-| #define HAVE_SYS_STAT_H 1
-| #define HAVE_STDLIB_H 1
-| #define HAVE_STRING_H 1
-| #define HAVE_MEMORY_H 1
-| #define HAVE_STRINGS_H 1
-| #define HAVE_INTTYPES_H 1
-| #define HAVE_STDINT_H 1
-| #define HAVE_UNISTD_H 1
-| #define __EXTENSIONS__ 1
-| #define _ALL_SOURCE 1
-| #define _GNU_SOURCE 1
-| #define _POSIX_PTHREAD_SEMANTICS 1
-| #define _TANDEM_SOURCE 1
-| #define _FILE_OFFSET_BITS 64
-| #define STDC_HEADERS 1
-| #define HAVE_DLFCN_H 1
-| #define LT_OBJDIR ".libs/"
-| #define HAVE_VISIBILITY 1
-| #define DBUS_UNIX 1
-| #define GLIB_VERSION_MIN_REQUIRED GLIB_VERSION_2_36
-| #define GLIB_VERSION_MAX_ALLOWED GLIB_VERSION_2_38
-| #define DBUS_ENABLE_MODULAR_TESTS 1
-| #define DBUS_WITH_GLIB 1
-| #define DBUS_DISABLE_ASSERT 1
-| #define SIZEOF_CHAR 1
-| #define SIZEOF_SHORT 2
-| #define SIZEOF_LONG 4
-| #define SIZEOF_INT 4
-| #define SIZEOF_VOID_P 4
-| #define SIZEOF_LONG_LONG 8
-| #define SIZEOF___INT64 0
-| #define DBUS_INT64_PRINTF_MODIFIER "ll"
-| #define DBUS_VA_COPY va_copy
-| #define DBUS_VA_COPY_AS_ARRAY 1
-| #define DBUS_USE_SYNC 1
-| #define HAVE_VSNPRINTF 1
-| #define HAVE_VASPRINTF 1
-| #define HAVE_NANOSLEEP 1
-| #define HAVE_USLEEP 1
-| #define HAVE_SETENV 1
-| #define HAVE_CLEARENV 1
-| #define HAVE_UNSETENV 1
-| #define HAVE_SOCKETPAIR 1
-| #define HAVE_GETGROUPLIST 1
-| #define HAVE_FPATHCONF 1
-| #define HAVE_SETRLIMIT 1
-| #define HAVE_POLL 1
-| #define HAVE_SETLOCALE 1
-| #define HAVE_LOCALECONV 1
-| #define HAVE_STRTOLL 1
-| #define HAVE_STRTOULL 1
-| #define HAVE_GETRESUID 1
-| #define HAVE_SETRESUID 1
-| #define HAVE_GETRLIMIT 1
-| #define HAVE_SYSLOG_H 1
-| #define HAVE_DECL_LOG_PERROR 1
-| #define HAVE_SYS_PRCTL_H 1
-| #define HAVE_PRCTL 1
-| #define HAVE_RAISE 1
-| #define HAVE_DIRFD 1
-| #define HAVE_SYS_RESOURCE_H 1
-| #define HAVE_DIRENT_H 1
-| #define HAVE_EXECINFO_H 1
-| #define HAVE_BACKTRACE 1
-| #define HAVE_ERRNO_H 1
-| #define HAVE_SIGNAL_H 1
-| #define HAVE_LOCALE_H 1
-| #define HAVE_BYTESWAP_H 1
-| #define HAVE_UNISTD_H 1
-| #define HAVE_STDINT_H 1
-| #define HAVE_ALLOCA_H 1
-| #define HAVE_POSIX_GETPWNAM_R 1
-| #define HAVE_SOCKLEN_T 1
-| #define HAVE_SYS_UIO_H 1
-| #define HAVE_WRITEV 1
-| #define HAVE_DECL_MSG_NOSIGNAL 1
-| #define HAVE_ISO_VARARGS 1
-| #define HAVE_GNUC_VARARGS 1
-| #define HAVE_PIPE2 1
-| #define HAVE_ACCEPT4 1
-| #define HAVE_ABSTRACT_SOCKETS 1
-| #define HAVE_EXPAT_H 1
-| #define HAVE_MONOTONIC_CLOCK 1
-| #define HAVE_SELINUX 1
-| #define HAVE_SYS_INOTIFY_H 1
-| #define DBUS_BUS_ENABLE_INOTIFY 1
-| #define HAVE_INOTIFY_INIT1 1
-| #define DBUS_HAVE_LINUX_EPOLL 1
-| #define HAVE_UNIX_FD_PASSING 1
-| /* end confdefs.h.  */
-| #include <X11/Xlib.h>
+configure:17695: $? = 0
 configure:17726: gcc -o conftest -g -O2   conftest.c -lX11  >&5
-conftest.c:104:10: fatal error: X11/Xlib.h: No such file or directory
- #include <X11/Xlib.h>
-          ^~~~~~~~~~~~
-compilation terminated.
-configure:17726: $? = 1
-configure: failed program was:
-| /* confdefs.h */
-| #define PACKAGE_NAME "dbus"
-| #define PACKAGE_TARNAME "dbus"
-| #define PACKAGE_VERSION "1.10.10"
-| #define PACKAGE_STRING "dbus 1.10.10"
-| #define PACKAGE_BUGREPORT "https://bugs.freedesktop.org/enter_bug.cgi?product=dbus"
-| #define PACKAGE_URL ""
-| #define PACKAGE "dbus"
-| #define VERSION "1.10.10"
-| #define GETTEXT_PACKAGE "dbus-1"
-| #define DBUS_DAEMON_NAME "dbus-daemon"
-| #define STDC_HEADERS 1
-| #define HAVE_SYS_TYPES_H 1
-| #define HAVE_SYS_STAT_H 1
-| #define HAVE_STDLIB_H 1
-| #define HAVE_STRING_H 1
-| #define HAVE_MEMORY_H 1
-| #define HAVE_STRINGS_H 1
-| #define HAVE_INTTYPES_H 1
-| #define HAVE_STDINT_H 1
-| #define HAVE_UNISTD_H 1
-| #define __EXTENSIONS__ 1
-| #define _ALL_SOURCE 1
-| #define _GNU_SOURCE 1
-| #define _POSIX_PTHREAD_SEMANTICS 1
-| #define _TANDEM_SOURCE 1
-| #define _FILE_OFFSET_BITS 64
-| #define STDC_HEADERS 1
-| #define HAVE_DLFCN_H 1
-| #define LT_OBJDIR ".libs/"
-| #define HAVE_VISIBILITY 1
-| #define DBUS_UNIX 1
-| #define GLIB_VERSION_MIN_REQUIRED GLIB_VERSION_2_36
-| #define GLIB_VERSION_MAX_ALLOWED GLIB_VERSION_2_38
-| #define DBUS_ENABLE_MODULAR_TESTS 1
-| #define DBUS_WITH_GLIB 1
-| #define DBUS_DISABLE_ASSERT 1
-| #define SIZEOF_CHAR 1
-| #define SIZEOF_SHORT 2
-| #define SIZEOF_LONG 4
-| #define SIZEOF_INT 4
-| #define SIZEOF_VOID_P 4
-| #define SIZEOF_LONG_LONG 8
-| #define SIZEOF___INT64 0
-| #define DBUS_INT64_PRINTF_MODIFIER "ll"
-| #define DBUS_VA_COPY va_copy
-| #define DBUS_VA_COPY_AS_ARRAY 1
-| #define DBUS_USE_SYNC 1
-| #define HAVE_VSNPRINTF 1
-| #define HAVE_VASPRINTF 1
-| #define HAVE_NANOSLEEP 1
-| #define HAVE_USLEEP 1
-| #define HAVE_SETENV 1
-| #define HAVE_CLEARENV 1
-| #define HAVE_UNSETENV 1
-| #define HAVE_SOCKETPAIR 1
-| #define HAVE_GETGROUPLIST 1
-| #define HAVE_FPATHCONF 1
-| #define HAVE_SETRLIMIT 1
-| #define HAVE_POLL 1
-| #define HAVE_SETLOCALE 1
-| #define HAVE_LOCALECONV 1
-| #define HAVE_STRTOLL 1
-| #define HAVE_STRTOULL 1
-| #define HAVE_GETRESUID 1
-| #define HAVE_SETRESUID 1
-| #define HAVE_GETRLIMIT 1
-| #define HAVE_SYSLOG_H 1
-| #define HAVE_DECL_LOG_PERROR 1
-| #define HAVE_SYS_PRCTL_H 1
-| #define HAVE_PRCTL 1
-| #define HAVE_RAISE 1
-| #define HAVE_DIRFD 1
-| #define HAVE_SYS_RESOURCE_H 1
-| #define HAVE_DIRENT_H 1
-| #define HAVE_EXECINFO_H 1
-| #define HAVE_BACKTRACE 1
-| #define HAVE_ERRNO_H 1
-| #define HAVE_SIGNAL_H 1
-| #define HAVE_LOCALE_H 1
-| #define HAVE_BYTESWAP_H 1
-| #define HAVE_UNISTD_H 1
-| #define HAVE_STDINT_H 1
-| #define HAVE_ALLOCA_H 1
-| #define HAVE_POSIX_GETPWNAM_R 1
-| #define HAVE_SOCKLEN_T 1
-| #define HAVE_SYS_UIO_H 1
-| #define HAVE_WRITEV 1
-| #define HAVE_DECL_MSG_NOSIGNAL 1
-| #define HAVE_ISO_VARARGS 1
-| #define HAVE_GNUC_VARARGS 1
-| #define HAVE_PIPE2 1
-| #define HAVE_ACCEPT4 1
-| #define HAVE_ABSTRACT_SOCKETS 1
-| #define HAVE_EXPAT_H 1
-| #define HAVE_MONOTONIC_CLOCK 1
-| #define HAVE_SELINUX 1
-| #define HAVE_SYS_INOTIFY_H 1
-| #define DBUS_BUS_ENABLE_INOTIFY 1
-| #define HAVE_INOTIFY_INIT1 1
-| #define DBUS_HAVE_LINUX_EPOLL 1
-| #define HAVE_UNIX_FD_PASSING 1
-| /* end confdefs.h.  */
-| #include <X11/Xlib.h>
-| int
-| main ()
-| {
-| XrmInitialize ()
-|   ;
-|   return 0;
-| }
-configure:17765: result: no
+configure:17726: $? = 0
+configure:17776: result: libraries , headers 
+configure:17875: gcc -o conftest -g -O2   conftest.c   -lX11 >&5
+configure:17875: $? = 0
+configure:17973: checking for gethostbyname
+configure:17973: result: yes
+configure:18070: checking for connect
+configure:18070: gcc -o conftest -g -O2   conftest.c  >&5
+configure:18070: $? = 0
+configure:18070: result: yes
+configure:18119: checking for remove
+configure:18119: gcc -o conftest -g -O2   conftest.c  >&5
+configure:18119: $? = 0
+configure:18119: result: yes
+configure:18168: checking for shmat
+configure:18168: gcc -o conftest -g -O2   conftest.c  >&5
+configure:18168: $? = 0
+configure:18168: result: yes
+configure:18226: checking for IceConnectionNumber in -lICE
+configure:18251: gcc -o conftest -g -O2   conftest.c -lICE   >&5
+configure:18251: $? = 0
+configure:18260: result: yes
 configure:18336: checking to see if compiler understands 
 configure:18355: gcc -c -g -O2   conftest.c >&5
 configure:18355: $? = 0
@@ -4299,9 +4032,7 @@ configure:19421: $PKG_CONFIG --exists --print-errors "systemd"
 configure:19424: $? = 0
 configure:19770: checking crt_externs.h usability
 configure:19770: gcc -c  -Wall -Wextra -Wchar-subscripts -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wcast-align -Wno-address -Wfloat-equal -Wdeclaration-after-statement -Wno-unused-label -Wno-missing-field-initializers -Wno-unused-parameter -Wno-pointer-sign -Wno-type-limits -fno-common -fno-strict-aliasing -g -O2  conftest.c >&5
-conftest.c:157:10: fatal error: crt_externs.h: No such file or directory
- #include <crt_externs.h>
-          ^~~~~~~~~~~~~~~
+conftest.c:158:25: fatal error: crt_externs.h: No such file or directory
 compilation terminated.
 configure:19770: $? = 1
 configure: failed program was:
@@ -4407,7 +4138,8 @@ configure: failed program was:
 | #define HAVE_INOTIFY_INIT1 1
 | #define DBUS_HAVE_LINUX_EPOLL 1
 | #define HAVE_UNIX_FD_PASSING 1
-| #define X_DISPLAY_MISSING 1
+| #define DBUS_BUILD_X11 1
+| #define DBUS_ENABLE_X11_AUTOLAUNCH 1
 | #define DBUS_SYSTEM_SOCKET "/usr/local/var/run/dbus/system_bus_socket"
 | #define DBUS_SYSTEM_BUS_DEFAULT_ADDRESS "unix:path=/usr/local/var/run/dbus/system_bus_socket"
 | #define DBUS_CONSOLE_AUTH_DIR "/var/run/console/"
@@ -4465,9 +4197,7 @@ configure: failed program was:
 configure:19770: result: no
 configure:19770: checking crt_externs.h presence
 configure:19770: gcc -E  conftest.c
-conftest.c:124:10: fatal error: crt_externs.h: No such file or directory
- #include <crt_externs.h>
-          ^~~~~~~~~~~~~~~
+conftest.c:125:25: fatal error: crt_externs.h: No such file or directory
 compilation terminated.
 configure:19770: $? = 1
 configure: failed program was:
@@ -4573,7 +4303,8 @@ configure: failed program was:
 | #define HAVE_INOTIFY_INIT1 1
 | #define DBUS_HAVE_LINUX_EPOLL 1
 | #define HAVE_UNIX_FD_PASSING 1
-| #define X_DISPLAY_MISSING 1
+| #define DBUS_BUILD_X11 1
+| #define DBUS_ENABLE_X11_AUTOLAUNCH 1
 | #define DBUS_SYSTEM_SOCKET "/usr/local/var/run/dbus/system_bus_socket"
 | #define DBUS_SYSTEM_BUS_DEFAULT_ADDRESS "unix:path=/usr/local/var/run/dbus/system_bus_socket"
 | #define DBUS_CONSOLE_AUTH_DIR "/var/run/console/"
@@ -4600,8 +4331,8 @@ configure:19770: checking for crt_externs.h
 configure:19770: result: no
 configure:19780: checking for _NSGetEnviron
 configure:19780: gcc -o conftest  -Wall -Wextra -Wchar-subscripts -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wcast-align -Wno-address -Wfloat-equal -Wdeclaration-after-statement -Wno-unused-label -Wno-missing-field-initializers -Wno-unused-parameter -Wno-pointer-sign -Wno-type-limits -fno-common -fno-strict-aliasing -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccqQf6Y1.o: in function `main':
-/home/pi/commonapi/dbus-1.10.10/conftest.c:158: undefined reference to `_NSGetEnviron'
+/usr/bin/ld: /tmp/ccjBcKdl.o: in function `main':
+/home/pi/commonapi/dbus-1.10.10/conftest.c:159: undefined reference to `_NSGetEnviron'
 collect2: error: ld returned 1 exit status
 configure:19780: $? = 1
 configure: failed program was:
@@ -4707,7 +4438,8 @@ configure: failed program was:
 | #define HAVE_INOTIFY_INIT1 1
 | #define DBUS_HAVE_LINUX_EPOLL 1
 | #define HAVE_UNIX_FD_PASSING 1
-| #define X_DISPLAY_MISSING 1
+| #define DBUS_BUILD_X11 1
+| #define DBUS_ENABLE_X11_AUTOLAUNCH 1
 | #define DBUS_SYSTEM_SOCKET "/usr/local/var/run/dbus/system_bus_socket"
 | #define DBUS_SYSTEM_BUS_DEFAULT_ADDRESS "unix:path=/usr/local/var/run/dbus/system_bus_socket"
 | #define DBUS_CONSOLE_AUTH_DIR "/var/run/console/"
@@ -4786,45 +4518,45 @@ generated by GNU Autoconf 2.69.  Invocation command line was
 
 on raspberrypi
 
-config.status:1485: creating Doxyfile
-config.status:1485: creating dbus/Version
-config.status:1485: creating dbus/versioninfo.rc
-config.status:1485: creating dbus/dbus-arch-deps.h
-config.status:1485: creating bus/system.conf
-config.status:1485: creating bus/session.conf
-config.status:1485: creating bus/legacy-config/system.conf
-config.status:1485: creating bus/legacy-config/session.conf
-config.status:1485: creating bus/example-system-enable-stats.conf
-config.status:1485: creating bus/example-session-disable-stats.conf
-config.status:1485: creating bus/messagebus
-config.status:1485: creating bus/messagebus-config
-config.status:1485: creating bus/org.freedesktop.dbus-session.plist
-config.status:1485: creating bus/rc.messagebus
-config.status:1485: creating bus/dbus.service
-config.status:1485: creating bus/dbus.socket
-config.status:1485: creating bus/systemd-user/dbus.service
-config.status:1485: creating bus/systemd-user/dbus.socket
-config.status:1485: creating Makefile
-config.status:1485: creating dbus/Makefile
-config.status:1485: creating bus/Makefile
-config.status:1485: creating tools/Makefile
-config.status:1485: creating test/Makefile
-config.status:1485: creating test/name-test/Makefile
-config.status:1485: creating doc/Makefile
-config.status:1485: creating doc/dbus-cleanup-sockets.1.xml
-config.status:1485: creating doc/dbus-daemon.1.xml
-config.status:1485: creating doc/dbus-launch.1.xml
-config.status:1485: creating doc/dbus-monitor.1.xml
-config.status:1485: creating doc/dbus-run-session.1.xml
-config.status:1485: creating doc/dbus-send.1.xml
-config.status:1485: creating doc/dbus-test-tool.1.xml
-config.status:1485: creating doc/dbus-update-activation-environment.1.xml
-config.status:1485: creating doc/dbus-uuidgen.1.xml
-config.status:1485: creating dbus-1.pc
-config.status:1485: creating dbus-1-uninstalled.pc
-config.status:1485: creating config.h
-config.status:1714: executing depfiles commands
-config.status:1714: executing libtool commands
+config.status:1486: creating Doxyfile
+config.status:1486: creating dbus/Version
+config.status:1486: creating dbus/versioninfo.rc
+config.status:1486: creating dbus/dbus-arch-deps.h
+config.status:1486: creating bus/system.conf
+config.status:1486: creating bus/session.conf
+config.status:1486: creating bus/legacy-config/system.conf
+config.status:1486: creating bus/legacy-config/session.conf
+config.status:1486: creating bus/example-system-enable-stats.conf
+config.status:1486: creating bus/example-session-disable-stats.conf
+config.status:1486: creating bus/messagebus
+config.status:1486: creating bus/messagebus-config
+config.status:1486: creating bus/org.freedesktop.dbus-session.plist
+config.status:1486: creating bus/rc.messagebus
+config.status:1486: creating bus/dbus.service
+config.status:1486: creating bus/dbus.socket
+config.status:1486: creating bus/systemd-user/dbus.service
+config.status:1486: creating bus/systemd-user/dbus.socket
+config.status:1486: creating Makefile
+config.status:1486: creating dbus/Makefile
+config.status:1486: creating bus/Makefile
+config.status:1486: creating tools/Makefile
+config.status:1486: creating test/Makefile
+config.status:1486: creating test/name-test/Makefile
+config.status:1486: creating doc/Makefile
+config.status:1486: creating doc/dbus-cleanup-sockets.1.xml
+config.status:1486: creating doc/dbus-daemon.1.xml
+config.status:1486: creating doc/dbus-launch.1.xml
+config.status:1486: creating doc/dbus-monitor.1.xml
+config.status:1486: creating doc/dbus-run-session.1.xml
+config.status:1486: creating doc/dbus-send.1.xml
+config.status:1486: creating doc/dbus-test-tool.1.xml
+config.status:1486: creating doc/dbus-update-activation-environment.1.xml
+config.status:1486: creating doc/dbus-uuidgen.1.xml
+config.status:1486: creating dbus-1.pc
+config.status:1486: creating dbus-1-uninstalled.pc
+config.status:1486: creating config.h
+config.status:1715: executing depfiles commands
+config.status:1715: executing libtool commands
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -4890,6 +4622,7 @@ ac_cv_env_target_alias_value=
 ac_cv_func__NSGetEnviron=no
 ac_cv_func_accept4=yes
 ac_cv_func_clearenv=yes
+ac_cv_func_connect=yes
 ac_cv_func_fpathconf=yes
 ac_cv_func_getgrouplist=yes
 ac_cv_func_gethostbyname=yes
@@ -4908,10 +4641,12 @@ ac_cv_func_posix_getpwnam_r=yes
 ac_cv_func_prctl=yes
 ac_cv_func_pthread_create=no
 ac_cv_func_raise=yes
+ac_cv_func_remove=yes
 ac_cv_func_setenv=yes
 ac_cv_func_setlocale=yes
 ac_cv_func_setresuid=yes
 ac_cv_func_setrlimit=yes
+ac_cv_func_shmat=yes
 ac_cv_func_socketpair=yes
 ac_cv_func_strtoll=yes
 ac_cv_func_strtoull=yes
@@ -4924,7 +4659,7 @@ ac_cv_gnu_library_2_1=yes
 ac_cv_have_abstract_sockets=yes
 ac_cv_have_decl_LOG_PERROR=yes
 ac_cv_have_decl_MSG_NOSIGNAL=yes
-ac_cv_have_x=have_x=no
+ac_cv_have_x='have_x=yes	ac_x_includes='\'''\''	ac_x_libraries='\'''\'''
 ac_cv_header_alloca_h=yes
 ac_cv_header_byteswap_h=yes
 ac_cv_header_crt_externs_h=no
@@ -4956,6 +4691,7 @@ ac_cv_header_syslog_h=yes
 ac_cv_header_unistd_h=yes
 ac_cv_header_ws2tcpip_h=no
 ac_cv_host=armv7l-unknown-linux-gnueabihf
+ac_cv_lib_ICE_IceConnectionNumber=yes
 ac_cv_lib_audit_audit_log_user_avc_message=no
 ac_cv_lib_expat_XML_ParserCreate_MM=yes
 ac_cv_lib_pthread_pthread_create=yes
@@ -5168,7 +4904,7 @@ DBUS_WITH_GLIB_TRUE=''
 DBUS_XML_DOCS_ENABLED_FALSE='#'
 DBUS_XML_DOCS_ENABLED_TRUE=''
 DBUS_X_CFLAGS=''
-DBUS_X_LIBS=''
+DBUS_X_LIBS='  -lSM -lICE -lX11 '
 DEFS='-DHAVE_CONFIG_H'
 DEPDIR='.deps'
 DLLTOOL='false'
@@ -5283,7 +5019,7 @@ XSLTPROC='xsltproc'
 X_CFLAGS=''
 X_EXTRA_LIBS=''
 X_LIBS=''
-X_PRE_LIBS=''
+X_PRE_LIBS=' -lSM -lICE'
 YELP_BUILD='no'
 ac_ct_AR='ar'
 ac_ct_CC='gcc'
@@ -5452,7 +5188,8 @@ target_alias=''
 #define HAVE_INOTIFY_INIT1 1
 #define DBUS_HAVE_LINUX_EPOLL 1
 #define HAVE_UNIX_FD_PASSING 1
-#define X_DISPLAY_MISSING 1
+#define DBUS_BUILD_X11 1
+#define DBUS_ENABLE_X11_AUTOLAUNCH 1
 #define DBUS_SYSTEM_SOCKET "/usr/local/var/run/dbus/system_bus_socket"
 #define DBUS_SYSTEM_BUS_DEFAULT_ADDRESS "unix:path=/usr/local/var/run/dbus/system_bus_socket"
 #define DBUS_CONSOLE_AUTH_DIR "/var/run/console/"

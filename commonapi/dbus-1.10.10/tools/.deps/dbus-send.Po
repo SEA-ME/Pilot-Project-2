@@ -6,8 +6,8 @@ dbus-send.o: dbus-send.c /usr/include/stdc-predef.h ../config.h \
  /usr/include/arm-linux-gnueabihf/bits/long-double.h \
  /usr/include/arm-linux-gnueabihf/gnu/stubs.h \
  /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h \
  /usr/include/arm-linux-gnueabihf/bits/types.h \
  /usr/include/arm-linux-gnueabihf/bits/typesizes.h \
  /usr/include/arm-linux-gnueabihf/bits/types/__fpos_t.h \
@@ -55,7 +55,7 @@ dbus-send.o: dbus-send.c /usr/include/stdc-predef.h ../config.h \
  ../dbus/dbus-pending-call.h ../dbus/dbus-server.h \
  ../dbus/dbus-signature.h ../dbus/dbus-syntax.h ../dbus/dbus-threads.h \
  ../dbus/dbus-internals.h ../dbus/dbus-sysdeps.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h \
  /usr/include/stdint.h /usr/include/arm-linux-gnueabihf/bits/wchar.h \
  /usr/include/arm-linux-gnueabihf/bits/stdint-uintn.h \
  /usr/include/inttypes.h ../dbus/dbus-file.h ../dbus/dbus-string.h \
@@ -83,9 +83,9 @@ dbus-send.o: dbus-send.c /usr/include/stdc-predef.h ../config.h \
 
 /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h:
 
 /usr/include/arm-linux-gnueabihf/bits/types.h:
 
@@ -213,7 +213,7 @@ dbus-send.o: dbus-send.c /usr/include/stdc-predef.h ../config.h \
 
 ../dbus/dbus-sysdeps.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h:
 
 /usr/include/stdint.h:
 

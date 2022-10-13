@@ -1,10 +1,10 @@
 dbus_launch-tool-common.o: tool-common.c /usr/include/stdc-predef.h \
  ../config.h tool-common.h ../dbus/dbus.h ../dbus/dbus-arch-deps.h \
  ../dbus/dbus-macros.h ../dbus/dbus-address.h ../dbus/dbus-types.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h \
  ../dbus/dbus-errors.h ../dbus/dbus-protocol.h ../dbus/dbus-bus.h \
  ../dbus/dbus-connection.h ../dbus/dbus-memory.h ../dbus/dbus-message.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h \
  ../dbus/dbus-shared.h ../dbus/dbus-misc.h ../dbus/dbus-pending-call.h \
  ../dbus/dbus-server.h ../dbus/dbus-signature.h ../dbus/dbus-syntax.h \
  ../dbus/dbus-threads.h /usr/include/errno.h /usr/include/features.h \
@@ -85,7 +85,7 @@ tool-common.h:
 
 ../dbus/dbus-types.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h:
 
 ../dbus/dbus-errors.h:
 
@@ -99,7 +99,7 @@ tool-common.h:
 
 ../dbus/dbus-message.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h:
 
 ../dbus/dbus-shared.h:
 

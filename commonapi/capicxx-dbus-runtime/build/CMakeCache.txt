@@ -40,11 +40,11 @@ CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-8
+CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-5
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-8
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-5
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -66,11 +66,11 @@ CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-8
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-5
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-8
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-5
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -283,8 +283,6 @@ libcommonapi-dbus_SOURCE_DIR:STATIC=/home/pi/commonapi/capicxx-dbus-runtime
 # INTERNAL cache entries
 ########################
 
-//Result of TEST_BIG_ENDIAN
-BIGENDIAN:INTERNAL=0
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -416,8 +414,6 @@ CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_SHARED_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//CHECK_TYPE_SIZE: sizeof(unsigned short)
-CMAKE_SIZEOF_UNSIGNED_SHORT:INTERNAL=2
 //ADVANCED property for variable: CMAKE_SKIP_INSTALL_RPATH
 CMAKE_SKIP_INSTALL_RPATH-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SKIP_RPATH
@@ -483,22 +479,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/bin/doxygen][cfound componen
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//Have library atomic
-HAS_LIBATOMIC:INTERNAL=1
-//Result of TRY_COMPILE
-HAVE_BIGENDIAN:INTERNAL=TRUE
-//Result of TRY_COMPILE
-HAVE_CMAKE_SIZEOF_UNSIGNED_SHORT:INTERNAL=TRUE
-//Test HAVE_CXX_ATOMICS64_WITHOUT_LIB
-HAVE_CXX_ATOMICS64_WITHOUT_LIB:INTERNAL=1
 //Test HAVE_CXX_ATOMICS_WITHOUT_LIB
 HAVE_CXX_ATOMICS_WITHOUT_LIB:INTERNAL=1
-//Have include stddef.h
-HAVE_STDDEF_H:INTERNAL=1
-//Have include stdint.h
-HAVE_STDINT_H:INTERNAL=1
-//Have include sys/types.h
-HAVE_SYS_TYPES_H:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 __pkg_config_arguments_DBus:INTERNAL=REQUIRED;dbus-1>=1.4

@@ -6,18 +6,18 @@ signals.o: signals.c /usr/include/stdc-predef.h ../config.h \
  /usr/include/arm-linux-gnueabihf/bits/long-double.h \
  /usr/include/arm-linux-gnueabihf/gnu/stubs.h \
  /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h \
  /usr/include/arm-linux-gnueabihf/bits/types/locale_t.h \
  /usr/include/arm-linux-gnueabihf/bits/types/__locale_t.h \
  /usr/include/strings.h signals.h ../dbus/dbus.h ../dbus/dbus-arch-deps.h \
  ../dbus/dbus-macros.h ../dbus/dbus-address.h ../dbus/dbus-types.h \
  ../dbus/dbus-errors.h ../dbus/dbus-protocol.h ../dbus/dbus-bus.h \
  ../dbus/dbus-connection.h ../dbus/dbus-memory.h ../dbus/dbus-message.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h \
  ../dbus/dbus-shared.h ../dbus/dbus-misc.h ../dbus/dbus-pending-call.h \
  ../dbus/dbus-server.h ../dbus/dbus-signature.h ../dbus/dbus-syntax.h \
  ../dbus/dbus-threads.h ../dbus/dbus-string.h ../dbus/dbus-sysdeps.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h \
  /usr/include/stdint.h /usr/include/arm-linux-gnueabihf/bits/types.h \
  /usr/include/arm-linux-gnueabihf/bits/typesizes.h \
  /usr/include/arm-linux-gnueabihf/bits/wchar.h \
@@ -53,7 +53,7 @@ signals.o: signals.c /usr/include/stdc-predef.h ../config.h \
 
 /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h:
 
 /usr/include/arm-linux-gnueabihf/bits/types/locale_t.h:
 
@@ -85,7 +85,7 @@ signals.h:
 
 ../dbus/dbus-message.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h:
 
 ../dbus/dbus-shared.h:
 
@@ -105,7 +105,7 @@ signals.h:
 
 ../dbus/dbus-sysdeps.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h:
 
 /usr/include/stdint.h:
 

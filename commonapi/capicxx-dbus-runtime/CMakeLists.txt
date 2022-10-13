@@ -13,15 +13,65 @@ SET( LIBCOMMONAPI_DBUS_MINOR_VERSION 1 )
 SET( LIBCOMMONAPI_DBUS_PATCH_VERSION 12 )
 
 message(STATUS "Project name: ${PROJECT_NAME}")
-INCLUDE(CheckLibraryExists)
-check_library_exists(atomic __atomic_fetch_add_4 "" HAS_LIBATOMIC)
-if(HAS_LIBATOMIC)
-    set(CMAKE_CXX_LINK_FLAGS "${CMAKE_CXX_LINK_FLAGS} -latomic")
-endif()
+
+set(COMPONENT_VERSION ${LIBCOMMONAPI_DBUS_MAJOR_VERSION}.${LIBCOMMONAPI_DBUS_MINOR_VERSION}.${LIBCOMMONAPI_DBUS_PATCH_VERSION})
+set(COMMONAPI_API_HEADER_VERSION ${LIBCOMMONAPI_DBUS_MAJOR_VERSION}.${LIBCOMMONAPI_DBUS_MINOR_VERSION}) # used in *.cmake.in
+
+SET(PACKAGE_VERSION "${COMPONENT_VERSION}") # used in *.cmake.in
+
+set(GTEST_ROOT "n/a" CACHE STRING "Path to root folder of googletest. Must be set for building the tests.")
+#######
+# ==============================================================================
+# LLVM Release License
+# ==============================================================================
+# University of Illinois/NCSA
+# Open Source License
+#
+# Copyright (c) 2003-2018 University of Illinois at Urbana-Champaign.
+# All rights reserved.
+#
+# Developed by:
+#
+# LLVM Team
+#
+# University of Illinois at Urbana-Champaign
+#
+# http://llvm.org
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal with
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+#
+# * Redistributions of source code must retain the above copyright notice,
+# this list of conditions and the following disclaimers.
+#
+# * Redistributions in binary form must reproduce the above copyright notice,
+# this list of conditions and the following disclaimers in the
+# documentation and/or other materials provided with the distribution.
+#
+# * Neither the names of the LLVM Team, University of Illinois at
+# Urbana-Champaign, nor the names of its contributors may be used to
+# endorse or promote products derived from this Software without specific
+# prior written permission.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+# FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+# CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE
+# SOFTWARE.
+
 INCLUDE(CheckCXXSourceCompiles)
 INCLUDE(CheckLibraryExists)
+
 # Sometimes linking against libatomic is required for atomic ops, if
 # the platform doesn't support lock-free atomics.
+
+
 function(check_working_cxx_atomics varname)
 set(OLD_CMAKE_REQUIRED_FLAGS ${CMAKE_REQUIRED_FLAGS})
 set(CMAKE_REQUIRED_FLAGS "${CMAKE_REQUIRED_FLAGS} -std=c++11")
@@ -34,6 +84,8 @@ int main() {
 " ${varname})
 set(CMAKE_REQUIRED_FLAGS ${OLD_CMAKE_REQUIRED_FLAGS})
 endfunction(check_working_cxx_atomics)
+
+
 function(check_working_cxx_atomics64 varname)
 set(OLD_CMAKE_REQUIRED_FLAGS ${CMAKE_REQUIRED_FLAGS})
 set(CMAKE_REQUIRED_FLAGS "-std=c++11 ${CMAKE_REQUIRED_FLAGS}")
@@ -48,30 +100,39 @@ int main() {
 " ${varname})
 set(CMAKE_REQUIRED_FLAGS ${OLD_CMAKE_REQUIRED_FLAGS})
 endfunction(check_working_cxx_atomics64)
+
+
 function(check_working_cxx_atomics_2args varname)
-set(OLD_CMAKE_REQUIRED_FLAGS ${CMAKE_REQUIRED_FLAGS})
-set(CMAKE_REQUIRED_FLAGS "${CMAKE_REQUIRED_FLAGS} -latomic")
+set(OLD_CMAKE_REQUIRED_LIBRARIES ${CMAKE_REQUIRED_LIBRARIES})
+list(APPEND CMAKE_REQUIRED_LIBRARIES "atomic")
 CHECK_CXX_SOURCE_COMPILES("
 int main() {
   __atomic_load(nullptr, 0);
   return 0;
 }
 " ${varname})
-set(CMAKE_REQUIRED_FLAGS ${OLD_CMAKE_REQUIRED_FLAGS})
+set(CMAKE_REQUIRED_LIBRARIES ${OLD_CMAKE_REQUIRED_LIBRARIES})
 endfunction(check_working_cxx_atomics_2args)
+
+
 function(check_working_cxx_atomics64_2args varname)
-set(OLD_CMAKE_REQUIRED_FLAGS ${CMAKE_REQUIRED_FLAGS})
-set(CMAKE_REQUIRED_FLAGS "${CMAKE_REQUIRED_FLAGS} -latomic")
+set(OLD_CMAKE_REQUIRED_LIBRARIES ${CMAKE_REQUIRED_LIBRARIES})
+list(APPEND CMAKE_REQUIRED_LIBRARIES "atomic")
 CHECK_CXX_SOURCE_COMPILES("
 int main() {
   __atomic_load_8(nullptr, 0);
   return 0;
 }
 " ${varname})
-set(CMAKE_REQUIRED_FLAGS ${OLD_CMAKE_REQUIRED_FLAGS})
+set(CMAKE_REQUIRED_LIBRARIES ${OLD_CMAKE_REQUIRED_LIBRARIES})
 endfunction(check_working_cxx_atomics64_2args)
+
+
 # First check if atomics work without the library.
 check_working_cxx_atomics(HAVE_CXX_ATOMICS_WITHOUT_LIB)
+
+set(ATOMIC_LIBRARY "")
+
 # If not, check if the library exists, and atomics work with it.
 if(NOT HAVE_CXX_ATOMICS_WITHOUT_LIB)
   check_library_exists(atomic __atomic_fetch_add_4 "" HAVE_LIBATOMIC)
@@ -80,7 +141,7 @@ if(NOT HAVE_CXX_ATOMICS_WITHOUT_LIB)
   endif()
   if( HAVE_LIBATOMIC OR HAVE_LIBATOMIC_2ARGS )
     list(APPEND CMAKE_REQUIRED_LIBRARIES "atomic")
-    set(CMAKE_CXX_LINK_FLAGS "${CMAKE_CXX_LINK_FLAGS} -latomic")
+    set(ATOMIC_LIBRARY "atomic")
     check_working_cxx_atomics(HAVE_CXX_ATOMICS_WITH_LIB)
     if (NOT HAVE_CXX_ATOMICS_WITH_LIB)
       message(FATAL_ERROR "Host compiler must support std::atomic!")
@@ -92,6 +153,7 @@ if(NOT HAVE_CXX_ATOMICS_WITHOUT_LIB)
     else()
       check_working_cxx_atomics64(HAVE_CXX_ATOMICS64_WITHOUT_LIB)
     endif()
+
     # If not, check if the library exists, and atomics work with it.
     if( NOT HAVE_CXX_ATOMICS64_WITHOUT_LIB )
       check_library_exists(atomic __atomic_load_8 "" HAVE_CXX_LIBATOMICS64)
@@ -100,7 +162,7 @@ if(NOT HAVE_CXX_ATOMICS_WITHOUT_LIB)
       endif()
       if( HAVE_CXX_LIBATOMICS64 OR HAVE_CXX_LIBATOMICS64_2ARGS )
         list(APPEND CMAKE_REQUIRED_LIBRARIES "atomic")
-        set(CMAKE_CXX_LINK_FLAGS "${CMAKE_CXX_LINK_FLAGS} -latomic")
+        set(ATOMIC_LIBRARY "atomic")
         check_working_cxx_atomics64(HAVE_CXX_ATOMICS64_WITH_LIB)
         if (NOT HAVE_CXX_ATOMICS64_WITH_LIB)
           message(FATAL_ERROR "Host compiler must support std::atomic!")
@@ -109,19 +171,11 @@ if(NOT HAVE_CXX_ATOMICS_WITHOUT_LIB)
         message(FATAL_ERROR "Host compiler appears to require libatomic, but cannot find it.")
       endif()
     endif()
+
   endif()
 endif()
 
-INCLUDE(TestBigEndian)
-TEST_BIG_ENDIAN(BIGENDIAN)
-
-set(COMPONENT_VERSION ${LIBCOMMONAPI_DBUS_MAJOR_VERSION}.${LIBCOMMONAPI_DBUS_MINOR_VERSION}.${LIBCOMMONAPI_DBUS_PATCH_VERSION})
-set(COMMONAPI_API_HEADER_VERSION ${LIBCOMMONAPI_DBUS_MAJOR_VERSION}.${LIBCOMMONAPI_DBUS_MINOR_VERSION}) # used in *.cmake.in
-
-SET(PACKAGE_VERSION "${COMPONENT_VERSION}") # used in *.cmake.in
-
-set(GTEST_ROOT "n/a" CACHE STRING "Path to root folder of googletest. Must be set for building the tests.")
-
+#######
 # OS
 set(DL_LIBRARY "")
 if (${CMAKE_SYSTEM_NAME} MATCHES "Linux")

@@ -11,7 +11,7 @@ dbus_launch-dbus-launch.o: dbus-launch.c /usr/include/stdc-predef.h \
  /usr/include/arm-linux-gnueabihf/bits/types/clockid_t.h \
  /usr/include/arm-linux-gnueabihf/bits/types/time_t.h \
  /usr/include/arm-linux-gnueabihf/bits/types/timer_t.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h \
  /usr/include/arm-linux-gnueabihf/bits/stdint-intn.h \
  /usr/include/endian.h /usr/include/arm-linux-gnueabihf/bits/endian.h \
  /usr/include/arm-linux-gnueabihf/bits/byteswap.h \
@@ -29,7 +29,7 @@ dbus_launch-dbus-launch.o: dbus-launch.c /usr/include/stdc-predef.h \
  ../dbus/dbus-types.h ../dbus/dbus-errors.h ../dbus/dbus-protocol.h \
  ../dbus/dbus-bus.h ../dbus/dbus-connection.h ../dbus/dbus-memory.h \
  ../dbus/dbus-message.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h \
  ../dbus/dbus-shared.h ../dbus/dbus-misc.h ../dbus/dbus-pending-call.h \
  ../dbus/dbus-server.h ../dbus/dbus-signature.h ../dbus/dbus-syntax.h \
  ../dbus/dbus-threads.h /usr/include/stdlib.h \
@@ -95,14 +95,15 @@ dbus_launch-dbus-launch.o: dbus-launch.c /usr/include/stdc-predef.h \
  /usr/include/arm-linux-gnueabihf/bits/types/struct_tm.h \
  /usr/include/arm-linux-gnueabihf/bits/types/struct_itimerspec.h \
  ../dbus/dbus-internals.h ../dbus/dbus-sysdeps.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h \
  /usr/include/stdint.h /usr/include/arm-linux-gnueabihf/bits/wchar.h \
  /usr/include/arm-linux-gnueabihf/bits/stdint-uintn.h \
  /usr/include/inttypes.h ../dbus/dbus-file.h ../dbus/dbus-string.h \
  /usr/include/arm-linux-gnueabihf/sys/poll.h \
  /usr/include/arm-linux-gnueabihf/bits/poll.h \
- ../dbus/dbus-threads-internal.h ../dbus/dbus-sysdeps-unix.h \
- tool-common.h
+ ../dbus/dbus-threads-internal.h /usr/include/X11/Xlib.h \
+ /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
+ /usr/include/X11/Xosdefs.h ../dbus/dbus-sysdeps-unix.h tool-common.h
 
 /usr/include/stdc-predef.h:
 
@@ -136,7 +137,7 @@ dbus-launch.h:
 
 /usr/include/arm-linux-gnueabihf/bits/types/timer_t.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h:
 
 /usr/include/arm-linux-gnueabihf/bits/stdint-intn.h:
 
@@ -188,7 +189,7 @@ dbus-launch.h:
 
 ../dbus/dbus-message.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h:
 
 ../dbus/dbus-shared.h:
 
@@ -350,7 +351,7 @@ dbus-launch.h:
 
 ../dbus/dbus-sysdeps.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -369,6 +370,14 @@ dbus-launch.h:
 /usr/include/arm-linux-gnueabihf/bits/poll.h:
 
 ../dbus/dbus-threads-internal.h:
+
+/usr/include/X11/Xlib.h:
+
+/usr/include/X11/X.h:
+
+/usr/include/X11/Xfuncproto.h:
+
+/usr/include/X11/Xosdefs.h:
 
 ../dbus/dbus-sysdeps-unix.h:
 

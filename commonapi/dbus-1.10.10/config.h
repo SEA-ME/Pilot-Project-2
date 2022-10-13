@@ -11,7 +11,7 @@
 #define DBUS_BINDIR "/usr/local/bin"
 
 /* Define to build X11 functionality */
-/* #undef DBUS_BUILD_X11 */
+#define DBUS_BUILD_X11 1
 
 /* whether -export-dynamic was passed to libtool */
 /* #undef DBUS_BUILT_R_DYNAMIC */
@@ -62,7 +62,7 @@
 /* #undef DBUS_ENABLE_VERBOSE_MODE */
 
 /* Define to enable X11 auto-launch */
-/* #undef DBUS_ENABLE_X11_AUTOLAUNCH */
+#define DBUS_ENABLE_X11_AUTOLAUNCH 1
 
 /* Extension for executables, typically empty or .exe */
 #define DBUS_EXEEXT ""
@@ -484,7 +484,7 @@
 		
 
 /* Define to 1 if the X Window System is missing or not being used. */
-#define X_DISPLAY_MISSING 1
+/* #undef X_DISPLAY_MISSING */
 
 
 #if defined(HAVE_NSGETENVIRON) && defined(HAVE_CRT_EXTERNS_H)

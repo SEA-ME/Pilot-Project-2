@@ -1,6 +1,6 @@
 desktop-file.o: desktop-file.c /usr/include/stdc-predef.h ../config.h \
  ../dbus/dbus-sysdeps.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h \
  /usr/include/stdint.h \
  /usr/include/arm-linux-gnueabihf/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/arm-linux-gnueabihf/sys/cdefs.h \
@@ -14,10 +14,10 @@ desktop-file.o: desktop-file.c /usr/include/stdc-predef.h ../config.h \
  /usr/include/arm-linux-gnueabihf/bits/stdint-intn.h \
  /usr/include/arm-linux-gnueabihf/bits/stdint-uintn.h \
  /usr/include/inttypes.h ../dbus/dbus-errors.h ../dbus/dbus-macros.h \
- ../dbus/dbus-types.h /usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h \
+ ../dbus/dbus-types.h /usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h \
  ../dbus/dbus-arch-deps.h ../dbus/dbus-protocol.h ../dbus/dbus-file.h \
  ../dbus/dbus-string.h ../dbus/dbus-memory.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h \
  /usr/include/string.h \
  /usr/include/arm-linux-gnueabihf/bits/types/locale_t.h \
  /usr/include/arm-linux-gnueabihf/bits/types/__locale_t.h \
@@ -38,7 +38,7 @@ desktop-file.o: desktop-file.c /usr/include/stdc-predef.h ../config.h \
 
 ../dbus/dbus-sysdeps.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -74,7 +74,7 @@ desktop-file.o: desktop-file.c /usr/include/stdc-predef.h ../config.h \
 
 ../dbus/dbus-types.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h:
 
 ../dbus/dbus-arch-deps.h:
 
@@ -86,7 +86,7 @@ desktop-file.o: desktop-file.c /usr/include/stdc-predef.h ../config.h \
 
 ../dbus/dbus-memory.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h:
 
 /usr/include/string.h:
 

@@ -1,14 +1,14 @@
 dbus-mainloop.lo: dbus-mainloop.c /usr/include/stdc-predef.h ../config.h \
  dbus-mainloop.h ../dbus/dbus.h ../dbus/dbus-arch-deps.h \
  ../dbus/dbus-macros.h ../dbus/dbus-address.h ../dbus/dbus-types.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h \
  ../dbus/dbus-errors.h ../dbus/dbus-protocol.h ../dbus/dbus-bus.h \
  ../dbus/dbus-connection.h ../dbus/dbus-memory.h ../dbus/dbus-message.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h \
  ../dbus/dbus-shared.h ../dbus/dbus-misc.h ../dbus/dbus-pending-call.h \
  ../dbus/dbus-server.h ../dbus/dbus-signature.h ../dbus/dbus-syntax.h \
  ../dbus/dbus-threads.h ../dbus/dbus-hash.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h \
  /usr/include/stdint.h \
  /usr/include/arm-linux-gnueabihf/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/arm-linux-gnueabihf/sys/cdefs.h \
@@ -49,7 +49,7 @@ dbus-mainloop.h:
 
 ../dbus/dbus-types.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h:
 
 ../dbus/dbus-errors.h:
 
@@ -63,7 +63,7 @@ dbus-mainloop.h:
 
 ../dbus/dbus-message.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h:
 
 ../dbus/dbus-shared.h:
 
@@ -81,7 +81,7 @@ dbus-mainloop.h:
 
 ../dbus/dbus-hash.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h:
 
 /usr/include/stdint.h:
 

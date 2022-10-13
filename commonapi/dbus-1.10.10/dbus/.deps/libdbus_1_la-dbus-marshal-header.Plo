@@ -11,14 +11,14 @@ libdbus_1_la-dbus-marshal-header.lo: dbus-marshal-header.c \
  /usr/include/arm-linux-gnueabihf/bits/types.h \
  /usr/include/arm-linux-gnueabihf/bits/typesizes.h \
  ../dbus/dbus-protocol.h ../dbus/dbus-types.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h \
  ../dbus/dbus-arch-deps.h ../dbus/dbus-macros.h ../dbus/dbus-string.h \
  ../dbus/dbus-memory.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h \
  ../dbus/dbus-marshal-validate.h dbus-marshal-recursive.h \
  ../dbus/dbus-list.h ../dbus/dbus-internals.h ../dbus/dbus-errors.h \
  ../dbus/dbus-sysdeps.h \
- /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h \
  /usr/include/stdint.h \
  /usr/include/arm-linux-gnueabihf/bits/libc-header-start.h \
  /usr/include/arm-linux-gnueabihf/bits/wchar.h \
@@ -68,7 +68,7 @@ dbus-marshal-header.h:
 
 ../dbus/dbus-types.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stddef.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stddef.h:
 
 ../dbus/dbus-arch-deps.h:
 
@@ -78,7 +78,7 @@ dbus-marshal-header.h:
 
 ../dbus/dbus-memory.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdarg.h:
 
 ../dbus/dbus-marshal-validate.h:
 
@@ -92,7 +92,7 @@ dbus-marshal-recursive.h:
 
 ../dbus/dbus-sysdeps.h:
 
-/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h:
+/usr/lib/gcc/arm-linux-gnueabihf/5/include/stdint.h:
 
 /usr/include/stdint.h:
 
