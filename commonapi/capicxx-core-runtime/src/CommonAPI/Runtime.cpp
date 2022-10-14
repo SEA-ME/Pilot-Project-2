@@ -13,7 +13,7 @@
 #include <sys/stat.h>
 
 #include <algorithm>
-
+#include <iostream>
 #include <CommonAPI/Factory.hpp>
 #include <CommonAPI/IniFileReader.hpp>
 #include <CommonAPI/Logger.hpp>
@@ -293,15 +293,23 @@ Runtime::createProxy(
 bool
 Runtime::registerStub(const std::string &_domain, const std::string &_interface, const std::string &_instance,
                         std::shared_ptr<StubBase> _stub, const ConnectionId_t &_connectionId) {
+        std::cout << "test1" << std::endl;
+
     if (!isInitialized_) {
         initFactories();
+	        std::cout << "test2" << std::endl;
+
     }
 
     bool isRegistered = registerStubHelper(_domain, _interface, _instance, _stub, _connectionId, false);
     if (!isRegistered) {
+	            std::cout << "test3" << std::endl;
+
         std::string library = getLibrary(_domain, _interface, _instance, false);
         std::lock_guard<std::mutex> itsGuard(loadMutex_);
         if (loadLibrary(library) || defaultFactory_) {
+		        std::cout << "test4" << std::endl;
+
             isRegistered = registerStubHelper(_domain, _interface, _instance, _stub, _connectionId, true);
         }
     }
