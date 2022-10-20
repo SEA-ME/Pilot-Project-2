@@ -1,0 +1,27 @@
+.TH "ReplacementBlock" 3dbus "Thu Oct 13 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ReplacementBlock
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBDBusString\fP \fBreplacement\fP"
+.br
+.RI "Marshaled value including alignment padding\&. "
+.ti -1c
+.RI "int \fBpadding\fP"
+.br
+.RI "How much of the replacement block is padding\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 1135 of file dbus\-marshal\-recursive\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

@@ -1,0 +1,30 @@
+.TH "DBusAuthStateData" 3dbus "Thu Oct 13 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusAuthStateData \- Information about a auth state\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "const char * \fBname\fP"
+.br
+.RI "Name of the state\&. "
+.ti -1c
+.RI "\fBDBusAuthStateFunction\fP \fBhandler\fP"
+.br
+.RI "State function for this state\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Information about a auth state\&. 
+.PP
+Definition at line 144 of file dbus\-auth\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

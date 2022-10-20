@@ -1,0 +1,36 @@
+.TH "DBusHashEntry" 3dbus "Thu Oct 13 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusHashEntry \- Internal representation of a hash entry\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBDBusHashEntry\fP * \fBnext\fP"
+.br
+.RI "Pointer to next entry in this hash bucket, or \fBNULL\fP for end of chain\&. "
+.ti -1c
+.RI "void * \fBkey\fP"
+.br
+.RI "Hash key\&. "
+.ti -1c
+.RI "void * \fBvalue\fP"
+.br
+.RI "Hash value\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Internal representation of a hash entry\&. 
+
+A single entry (key-value pair) in the hash table\&. Internal to hash table implementation\&. 
+.PP
+Definition at line 143 of file dbus\-hash\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

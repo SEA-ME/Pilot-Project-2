@@ -1,0 +1,114 @@
+.TH "DBusAuth" 3dbus "Thu Oct 13 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusAuth \- Internal members of \fBDBusAuth\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "int \fBrefcount\fP"
+.br
+.RI "reference count "
+.ti -1c
+.RI "const char * \fBside\fP"
+.br
+.RI "Client or server\&. "
+.ti -1c
+.RI "\fBDBusString\fP \fBincoming\fP"
+.br
+.RI "Incoming data buffer\&. "
+.ti -1c
+.RI "\fBDBusString\fP \fBoutgoing\fP"
+.br
+.RI "Outgoing data buffer\&. "
+.ti -1c
+.RI "const \fBDBusAuthStateData\fP * \fBstate\fP"
+.br
+.RI "Current protocol state\&. "
+.ti -1c
+.RI "const \fBDBusAuthMechanismHandler\fP * \fBmech\fP"
+.br
+.RI "Current auth mechanism\&. "
+.ti -1c
+.RI "\fBDBusString\fP \fBidentity\fP"
+.br
+.RI "Current identity we're authorizing as\&. "
+.ti -1c
+.RI "\fBDBusCredentials\fP * \fBcredentials\fP"
+.br
+.RI "Credentials read from socket\&. "
+.ti -1c
+.RI "\fBDBusCredentials\fP * \fBauthorized_identity\fP"
+.br
+.RI "Credentials that are authorized\&. "
+.ti -1c
+.RI "\fBDBusCredentials\fP * \fBdesired_identity\fP"
+.br
+.RI "Identity client has requested\&. "
+.ti -1c
+.RI "\fBDBusString\fP \fBcontext\fP"
+.br
+.RI "Cookie scope\&. "
+.ti -1c
+.RI "\fBDBusKeyring\fP * \fBkeyring\fP"
+.br
+.RI "Keyring for cookie mechanism\&. "
+.ti -1c
+.RI "int \fBcookie_id\fP"
+.br
+.RI "ID of cookie to use\&. "
+.ti -1c
+.RI "\fBDBusString\fP \fBchallenge\fP"
+.br
+.RI "Challenge sent to client\&. "
+.ti -1c
+.RI "char ** \fBallowed_mechs\fP"
+.br
+.RI "Mechanisms we're allowed to use, or \fBNULL\fP if we can use any\&. "
+.ti -1c
+.RI "unsigned int \fBneeded_memory\fP: 1"
+.br
+.RI "We needed memory to continue since last successful getting something done\&. "
+.ti -1c
+.RI "unsigned int \fBalready_got_mechanisms\fP: 1"
+.br
+.RI "Client already got mech list\&. "
+.ti -1c
+.RI "unsigned int \fBalready_asked_for_initial_response\fP: 1"
+.br
+.RI "Already sent a blank challenge to get an initial response\&. "
+.ti -1c
+.RI "unsigned int \fBbuffer_outstanding\fP: 1"
+.br
+.RI "Buffer is 'checked out' for reading data into\&. "
+.ti -1c
+.RI "unsigned int \fBunix_fd_possible\fP: 1"
+.br
+.RI "This side could do unix fd passing\&. "
+.ti -1c
+.RI "unsigned int \fBunix_fd_negotiated\fP: 1"
+.br
+.RI "Unix fd was successfully negotiated\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Internal members of \fBDBusAuth\fP\&. 
+.PP
+Definition at line 153 of file dbus\-auth\&.c\&.
+.SH "Field Documentation"
+.PP 
+.SS "\fBDBusKeyring\fP* DBusAuth::keyring"
+
+.PP
+Keyring for cookie mechanism\&. 
+.PP
+Definition at line 177 of file dbus\-auth\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

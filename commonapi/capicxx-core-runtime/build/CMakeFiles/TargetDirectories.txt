@@ -1,0 +1,11 @@
+/home/pi/commonapi/capicxx-core-runtime/build/CMakeFiles/install/strip.dir
+/home/pi/commonapi/capicxx-core-runtime/build/CMakeFiles/list_install_components.dir
+/home/pi/commonapi/capicxx-core-runtime/build/CMakeFiles/rebuild_cache.dir
+/home/pi/commonapi/capicxx-core-runtime/build/CMakeFiles/install/local.dir
+/home/pi/commonapi/capicxx-core-runtime/build/CMakeFiles/maintainer-clean.dir
+/home/pi/commonapi/capicxx-core-runtime/build/CMakeFiles/install.dir
+/home/pi/commonapi/capicxx-core-runtime/build/CMakeFiles/CommonAPI.dir
+/home/pi/commonapi/capicxx-core-runtime/build/CMakeFiles/dist.dir
+/home/pi/commonapi/capicxx-core-runtime/build/CMakeFiles/doc.dir
+/home/pi/commonapi/capicxx-core-runtime/build/CMakeFiles/doxygen-doc.dir
+/home/pi/commonapi/capicxx-core-runtime/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,46 @@
+.TH "DBusMemPool" 3dbus "Thu Oct 13 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusMemPool \- Internals fields of \fBDBusMemPool\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "int \fBelement_size\fP"
+.br
+.RI "size of a single object in the pool "
+.ti -1c
+.RI "int \fBblock_size\fP"
+.br
+.RI "size of most recently allocated block "
+.ti -1c
+.RI "unsigned int \fBzero_elements\fP: 1"
+.br
+.RI "whether to zero-init allocated elements "
+.ti -1c
+.RI "\fBDBusFreedElement\fP * \fBfree_elements\fP"
+.br
+.RI "a free list of elements to recycle "
+.ti -1c
+.RI "\fBDBusMemBlock\fP * \fBblocks\fP"
+.br
+.RI "blocks of memory from malloc() "
+.ti -1c
+.RI "int \fBallocated_elements\fP"
+.br
+.RI "Count of outstanding allocated elements\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Internals fields of \fBDBusMemPool\fP\&. 
+.PP
+Definition at line 98 of file dbus\-mempool\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

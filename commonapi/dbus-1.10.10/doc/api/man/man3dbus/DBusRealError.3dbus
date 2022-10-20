@@ -1,0 +1,54 @@
+.TH "DBusRealError" 3dbus "Thu Oct 13 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusRealError \- Internals of \fBDBusError\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "char * \fBname\fP"
+.br
+.RI "error name "
+.ti -1c
+.RI "char * \fBmessage\fP"
+.br
+.RI "error message "
+.ti -1c
+.RI "unsigned int \fBconst_message\fP: 1"
+.br
+.RI "Message is not owned by \fBDBusError\fP\&. "
+.ti -1c
+.RI "unsigned int \fBdummy2\fP: 1"
+.br
+.RI "placeholder "
+.ti -1c
+.RI "unsigned int \fBdummy3\fP: 1"
+.br
+.RI "placeholder "
+.ti -1c
+.RI "unsigned int \fBdummy4\fP: 1"
+.br
+.RI "placeholder "
+.ti -1c
+.RI "unsigned int \fBdummy5\fP: 1"
+.br
+.RI "placeholder "
+.ti -1c
+.RI "void * \fBpadding1\fP"
+.br
+.RI "placeholder "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Internals of \fBDBusError\fP\&. 
+.PP
+Definition at line 65 of file dbus\-errors\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

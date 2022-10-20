@@ -1,0 +1,56 @@
+.TH "DBusRealHashIter" 3dbus "Thu Oct 13 2022" "Version 1.10.10" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusRealHashIter \- Internals of \fBDBusHashIter\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBDBusHashTable\fP * \fBtable\fP"
+.br
+.RI "Pointer to table containing entry\&. "
+.ti -1c
+.RI "\fBDBusHashEntry\fP ** \fBbucket\fP"
+.br
+.RI "Pointer to bucket that points to first entry in this entry's chain: used for deleting the entry\&. "
+.ti -1c
+.RI "\fBDBusHashEntry\fP * \fBentry\fP"
+.br
+.RI "Current hash entry\&. "
+.ti -1c
+.RI "\fBDBusHashEntry\fP * \fBnext_entry\fP"
+.br
+.RI "Next entry to be iterated onto in current bucket\&. "
+.ti -1c
+.RI "int \fBnext_bucket\fP"
+.br
+.RI "index of next bucket "
+.ti -1c
+.RI "int \fBn_entries_on_init\fP"
+.br
+.RI "used to detect table resize since initialization "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Internals of \fBDBusHashIter\fP\&. 
+.PP
+Definition at line 212 of file dbus\-hash\&.c\&.
+.SH "Field Documentation"
+.PP 
+.SS "\fBDBusHashTable\fP* DBusRealHashIter::table"
+
+.PP
+Pointer to table containing entry\&. 
+.PP
+Definition at line 214 of file dbus\-hash\&.c\&.
+.PP
+Referenced by _dbus_hash_iter_get_int_key(), _dbus_hash_iter_get_string_key(), _dbus_hash_iter_get_uintptr_key(), _dbus_hash_iter_get_value(), _dbus_hash_iter_remove_entry(), and _dbus_hash_iter_set_value()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.
